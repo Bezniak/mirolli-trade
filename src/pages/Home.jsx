@@ -1,6 +1,7 @@
 import Slider from "../components/Slider/Slider.jsx";
 import Quality from "../components/Quality/Quality.jsx";
 import Safety from "../components/Safety/Safety.jsx";
+import Portfolio from "../components/Portfolio/Portfolio.jsx";
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
             <Slider/>
             <Quality/>
             <Safety/>
+            <Portfolio/>
         </div>
     );
 };

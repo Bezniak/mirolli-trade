@@ -25,7 +25,7 @@ const Safety = () => {
 
             {/* Text Section */}
             <div className='max-w-lg text-center md:text-left'>
-                <h4 className='text-xs font-bold tracking-widest text-gray-500 uppercase mb-4'>
+                <h4 className='text-xs font-bold text-left tracking-widest text-gray-500 uppercase mb-4'>
                     {t("safety.comfort")}
                 </h4>
                 <h2 className='text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-6'>
