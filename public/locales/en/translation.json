@@ -1,0 +1,18 @@
+{
+  "home": "Home",
+  "about_us": "About us",
+  "portfolio": "Portfolio",
+  "prices": "Prices",
+  "Faq": "FAQ",
+  "contacts": "Contacts",
+  "slider": {
+    "sliderTitle_1": "Reliable heat supply – comfort in every home!",
+    "sliderTitle_2": "Gas boiler maintenance - safety and efficiency of your heating",
+    "sliderTitle_3": "Sale and service of gas equipment - high quality and with a guarantee!",
+    "more": "Learn more",
+    "aboutUs": "About us"
+  },
+  "quality": {
+    "title": "Premium quality"
+  }
+}
