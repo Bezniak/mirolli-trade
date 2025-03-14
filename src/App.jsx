@@ -4,6 +4,9 @@ import NotFound from "./components/NotFound/NotFound.jsx";
 import Home from "./pages/Home.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
+import AboutUs from "./components/AboutUs/AboutUs.jsx";
+import PortfolioContainer from "./components/Portfolio/PortfolioContainer.jsx";
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy.jsx";
 
 
 const Layout = () => {
@@ -33,6 +36,18 @@ const App = () => {
                 {
                     path: ROUTES.NOT_FOUND,
                     element: <NotFound/>
+                },
+                {
+                    path: ROUTES.ABOUT_US,
+                    element: <AboutUs/>
+                },
+                {
+                    path: ROUTES.PORTFOLIO,
+                    element: <PortfolioContainer/>
+                },
+                {
+                    path: ROUTES.PRIVACY_POLICY,
+                    element: <PrivacyPolicy/>
                 },
             ]
         },

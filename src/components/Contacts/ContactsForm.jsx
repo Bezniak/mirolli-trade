@@ -117,7 +117,8 @@ const ContactsForm = () => {
 
                 <div className="flex flex-col md:flex-row items-center gap-10 space-x-2">
                     <button type="submit"
-                            className="flex items-center justify-center bg-orange-500 text-white py-4 px-12 hover:bg-orange-600 transition">
+                            className="flex items-center justify-center bg-orange-500 text-white py-4 px-12 hover:bg-orange-600 transition"
+                    >
                         <FaPaperPlane className="mr-2"/> {t('contactsForm.submit')}
                     </button>
 

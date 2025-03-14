@@ -48,11 +48,11 @@ const Slider = () => {
                 </h1>
                 <div className="mt-10 md:mt-20 flex justify-center md:justify-start flex-wrap gap-4 w-full">
                     <button
-                        className="px-6 py-3 min-w-64 bg-white text-black font-medium rounded-lg shadow-md transition hover:bg-gray-200">
+                        className="px-6 py-3 min-w-64 bg-white text-black font-medium hover:bg-gray-300 transition">
                         {t('slider.more')}
                     </button>
                     <button
-                        className="px-6 py-3 min-w-64 bg-white text-black font-medium rounded-lg shadow-md transition hover:bg-gray-200">
+                        className="px-6 py-3 min-w-64 bg-white text-black font-medium hover:bg-gray-300 transition">
                         {t('slider.aboutUs')}
                     </button>
                 </div>

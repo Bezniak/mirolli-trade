@@ -3,7 +3,7 @@ import {useTranslation} from "react-i18next";
 import {NavLink} from "react-router-dom";
 import {ROUTES} from "../../config/routes.js";
 import {FaInstagramSquare, FaTiktok, FaViber} from "react-icons/fa";
-import {FaT, FaTelegram} from "react-icons/fa6";
+import {FaTelegram} from "react-icons/fa6";
 import {MdOutlineMailOutline} from "react-icons/md";
 import {handleClick} from "../../common/helpers.js";
 
@@ -17,42 +17,32 @@ const Footer = () => {
             <div className="mx-auto w-full max-w-screen-xl">
                 <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
                     <div>
-                        <h2 className="mb-6 text-sm font-semibold uppercase text-white">
-                            {t("company")}
-                        </h2>
+                        <NavLink to={ROUTES.HOME} onClick={handleClick}>
+                            <img src="/logo_3.svg" alt="logo" className='size-28 mb-10'/>
+                        </NavLink>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className="mb-4" onClick={handleClick}>
-                                <NavLink to={ROUTES.ABOUT_US} className=" hover:underline">
+                                <NavLink to={ROUTES.ABOUT_US} className="hover:text-red-500 transition">
                                     {t("about_us")}
                                 </NavLink>
                             </li>
                             <li className="mb-4" onClick={handleClick}>
-                                <NavLink to={ROUTES.CAREERS} className="hover:underline">
-                                    {t("careers")}
-                                </NavLink>
-                            </li>
-                            <li className="mb-4" onClick={handleClick}>
-                                <NavLink to={ROUTES.PORTFOLIO} className="hover:underline">
+                                <NavLink to={ROUTES.PORTFOLIO} className="hover:text-red-500 transition">
                                     {t("portfolio")}
                                 </NavLink>
                             </li>
                             <li className="mb-4" onClick={handleClick}>
-                                <NavLink to={ROUTES.FAQ} className="hover:underline">
+                                <NavLink to={ROUTES.FAQ} className="hover:text-red-500 transition">
                                     {t("Faq")}
                                 </NavLink>
                             </li>
                             <li className="mb-4" onClick={handleClick}>
-                                <NavLink to={ROUTES.PRIVACY_POLICY} className="hover:underline">
-                                    {t("privacy_policy")}
+                                <NavLink to={ROUTES.PRIVACY_POLICY} className="hover:text-red-500 transition">
+                                    {t("privacyPolicy")}
                                 </NavLink>
                             </li>
                             <li className="mb-4" onClick={handleClick}>
-                                <NavLink to={ROUTES.PRICES} className="hover:underline">
-                                    {t("prices")}
-                                </NavLink>
-                            </li>
-                            <li className="mb-4" onClick={handleClick}>
-                                <NavLink to={ROUTES.CONTACTS} className="hover:underline">
+                                <NavLink to={ROUTES.CONTACTS} className="hover:text-red-500 transition">
                                     {t("contacts")}
                                 </NavLink>
                             </li>
@@ -98,13 +88,13 @@ const Footer = () => {
                 </div>
 
                 <div className="px-4 py-6 bg-gray-900 md:flex md:items-center md:justify-between">
-                    <span className="text-base text-gray-500 dark:text-gray-300 sm:text-center">
-                        © {year} <NavLink to={ROUTES.HOME} onClick={handleClick}>IV-SOFT™</NavLink>.
+                    <span className="text-base text-gray-500 dark:text-gray-300 sm:text-center font-light">
+                        © {year} <NavLink to={ROUTES.HOME} onClick={handleClick}>{t("companyName")}™</NavLink>.
                         &nbsp;
-                        <a href="https://contragent.by/unp/590210932"
+                        <a href="https://contragent.by/unp/591614779"
                            target="_blank"
                            rel="noopener noreferrer"
-                           className="hover:text-white transition"
+                           className="hover:text-white transition font-light"
                         >
                             {t("UNP")}
                         </a>
@@ -159,6 +149,18 @@ const Footer = () => {
                             <MdOutlineMailOutline className="w-6 h-6"/>
                         </a>
                     </div>
+                </div>
+                <div className='text-center  mt-5 pb-5'>
+                    <p className='!text-white'>
+                        {t("developed_by")} &nbsp;
+                        <a href="https://www.linkedin.com/in/ivan-bezniak-2634a11a0/"
+                           rel="noreferrer"
+                           target="_blank"
+                           className='text-white hover:text-red-500 transition'
+                        >
+                            {t("ivan_bezniak")}
+                        </a>
+                    </p>
                 </div>
 
             </div>
