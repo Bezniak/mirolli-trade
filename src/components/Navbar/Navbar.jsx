@@ -75,10 +75,10 @@ const Navbar = () => {
                             <NavLink to={ROUTES.ABOUT_US} className="hover:text-gray-300">{t("about_us")}</NavLink>
                         </li>
                         <li>
-                            <NavLink to={ROUTES.PORTFOLIO} className="hover:text-gray-300">{t("portfolio")}</NavLink>
+                            <NavLink to={ROUTES.SERVICES} className="hover:text-gray-300">{t("services")}</NavLink>
                         </li>
                         <li>
-                            <NavLink to={ROUTES.PRICES} className="hover:text-gray-300">{t("prices")}</NavLink>
+                            <NavLink to={ROUTES.PORTFOLIO} className="hover:text-gray-300">{t("portfolio")}</NavLink>
                         </li>
                         <li>
                             <NavLink to={ROUTES.FAQ} className="hover:text-gray-300">{t("Faq")}</NavLink>
@@ -121,19 +121,19 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li>
+                        <NavLink to={ROUTES.SERVICES}
+                                 onClick={() => setIsMobileMenuOpen(false)}
+                                 className="py-2"
+                        >
+                            {t("services")}
+                        </NavLink>
+                    </li>
+                    <li>
                         <NavLink to={ROUTES.PORTFOLIO}
                                  onClick={() => setIsMobileMenuOpen(false)}
                                  className="py-2"
                         >
                             {t("portfolio")}
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to={ROUTES.PRICES}
-                                 onClick={() => setIsMobileMenuOpen(false)}
-                                 className="py-2"
-                        >
-                            {t("prices")}
                         </NavLink>
                     </li>
                     <li>

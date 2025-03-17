@@ -5,26 +5,21 @@ export const ROUTES = {
     CONTACTS: "/contacts",
     FAQ: "/faq",
     PORTFOLIO: "/portfolio",
-    PRICES: "/price",
     PRIVACY_POLICY: "/privacy-policy",
 
-    SITES: "/sites/:id",
-    BUSINESS_CARD_WEBSITE: "/business-card-website",
-    LANDING: "/landing",
-    CORPORATE_WEBSITE: "/corporate-website",
-    CATALOG_SITE: "/catalog-site",
-    ONLINE_STORE: "/online-store",
-    ONLINE_SCHOOL_WEBSITES: "/online-school-websites",
-    QUIZ_SITE: "/quiz-site",
-    WEDDING_INVITATION_WEBSITE: "/wedding-invitation-website",
-    WEBSITE_FOR_GOVERNMENT_ORGANIZATIONS: "/websites_for_government_organizations",
-
     SERVICE: "/service/:id",
-    WEBSITE_SUPPORT: "/website-support",
-    SMM: "/SMM",
-    LOCALIZATION_SUPPORT: "/localization-translation",
-    CAREERS: "/careers",
-    BRIEF: "/brief"
+    SERVICES: "/services",
+    BUSINESS_CARD_WEBSITE: "business-card-website",
+    ADJUSTMENT_OF_GAS_DISTRIBUTION_SYSTEM: "adjustmentOfGasDistributionSystem",
+    ADJUSTMENT_OF_EQUIPMENT_UNDER_EXCESS_PRESSURE: "adjustmentOfEquipmentUnderExcessPressure",
+    ADJUSTMENT_OF_TECHNICAL_DEVICES: "adjustmentOfTechnicalDevices",
+    MAINTENANCE_OF_GAS_DISTRIBUTION_SYSTEM: "maintenanceOfGasDistributionSystem",
+    SERVICING_EQUIPMENT_UNDER_EXCESS_PRESSURE: "servicingEquipmentUnderExcessPressure",
+    MAINTENANCE_OF_TECHNICAL_DEVICES: "maintenanceOfTechnicalDevices",
+    INSTALLATION_OF_EQUIPMENT_UNDER_EXCESS_PRESSURE: "installationOfEquipmentUnderExcessPressure",
+    INSTALLATION_OF_TECHNICAL_DEVICES: "installationOfTechnicalDevices",
+    INSTALLATION_OF_GAS_DISTRIBUTION_SYSTEM_FACILITIES: "installationOfGasDistributionSystemFacilities"
+
 
 
 }

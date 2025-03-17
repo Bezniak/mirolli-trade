@@ -34,12 +34,13 @@ const Safety = () => {
                 <p className='text-gray-600 leading-relaxed mb-6'>
                     {t("safety.description")}
                 </p>
-                <ul className='text-gray-700 font-medium mb-6'>
+                <ul className='text-gray-700 font-medium mb-12'>
                     <li className='mb-2'>{t("safety.workingHours_1")}</li>
                     <li>{t("safety.workingHours_2")}</li>
                 </ul>
                 <button
-                    className='bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition'>
+                    className="flex items-center justify-center bg-orange-500 text-white py-4 px-12 hover:bg-orange-600 transition"
+                >
                     {t("safety.contactUs")}
                 </button>
             </div>

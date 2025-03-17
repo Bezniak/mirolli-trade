@@ -2,24 +2,31 @@ import React from 'react';
 import {useTranslation} from "react-i18next";
 import {NavLink} from "react-router-dom";
 import {ROUTES} from "../../config/routes.js";
-import {FaInstagramSquare, FaTiktok, FaViber} from "react-icons/fa";
+import {FaInstagramSquare, FaTiktok, FaViber, FaWhatsapp} from "react-icons/fa";
 import {FaTelegram} from "react-icons/fa6";
 import {MdOutlineMailOutline} from "react-icons/md";
 import {handleClick} from "../../common/helpers.js";
+import {createStore} from "../../store/store.js";
 
 const Footer = () => {
     const {t} = useTranslation();
     const year = new Date().getFullYear();
+    const store = createStore(t);
 
 
     return (
         <footer className="bg-black">
             <div className="mx-auto w-full max-w-screen-xl">
-                <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
-                    <div>
+                <div className="flex flex-col md:flex-row gap-20 justify-between items-start px-6 py-6">
+                    <div className='xs:mx-auto pt-10 md:pt-0'>
                         <NavLink to={ROUTES.HOME} onClick={handleClick}>
                             <img src="/logo_3.svg" alt="logo" className='size-28 mb-10'/>
                         </NavLink>
+                    </div>
+                    <div>
+                        <h2 className="mb-6 !text-2xl font-semibold uppercase text-white">
+                            {t("about_us")}
+                        </h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className="mb-4" onClick={handleClick}>
                                 <NavLink to={ROUTES.ABOUT_US} className="hover:text-red-500 transition">
@@ -48,62 +55,41 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    {/*<div>*/}
-                    {/*    <h2 className="mb-6 text-sm font-semibold uppercase text-white">*/}
-                    {/*        {t("website_development")}*/}
-                    {/*    </h2>*/}
-                    {/*    <ul className="text-gray-500 dark:text-gray-400 font-medium">*/}
-                    {/*        <li className="mb-4">*/}
-                    {/*            <NavLink to={'sites' + ROUTES.BUSINESS_CARD_WEBSITE} className="hover:underline"*/}
-                    {/*                     onClick={handleClick}>*/}
-                    {/*                {t("business_card_website")}*/}
-                    {/*            </NavLink>*/}
-                    {/*        </li>*/}
-                    {/*    </ul>*/}
-                    {/*</div>*/}
-                    {/*<div>*/}
-                    {/*    <h2 className="mb-6 text-sm font-semibold uppercase text-white">*/}
-                    {/*        {t("services")}*/}
-                    {/*    </h2>*/}
-                    {/*    <ul className="text-gray-500 dark:text-gray-400 font-medium">*/}
-                    {/*        <li className="mb-4">*/}
-                    {/*            <NavLink to={'service' + ROUTES.WEBSITE_SUPPORT} className="hover:underline"*/}
-                    {/*                     onClick={handleClick}>*/}
-                    {/*                {t("website_support")}*/}
-                    {/*            </NavLink>*/}
-                    {/*        </li>*/}
-                    {/*        <li className="mb-4">*/}
-                    {/*            <NavLink to={'service' + ROUTES.SMM} className="hover:underline" onClick={handleClick}>*/}
-                    {/*                {t("SMM_service")}*/}
-                    {/*            </NavLink>*/}
-                    {/*        </li>*/}
-                    {/*        <li className="mb-4">*/}
-                    {/*            <NavLink to={'service' + ROUTES.LOCALIZATION_SUPPORT} className="hover:underline"*/}
-                    {/*                     onClick={handleClick}>*/}
-                    {/*                {t("localization_and_translation")}*/}
-                    {/*            </NavLink>*/}
-                    {/*        </li>*/}
-                    {/*    </ul>*/}
-                    {/*</div>*/}
+                    <div className="md:col-span-2">
+                        <h2 className="mb-6 !text-2xl font-semibold uppercase text-white">
+                            {t("services")}
+                        </h2>
+                        <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                            {store.services.map((service) => (
+                                <li key={service.id} className="mb-4" onClick={handleClick}>
+                                    <NavLink to={`/service/${service.url}`} onClick={handleClick}
+                                             className="hover:text-red-500 transition">
+                                        {service.name}
+                                    </NavLink>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
                 </div>
 
                 <div className="px-4 py-6 bg-gray-900 md:flex md:items-center md:justify-between">
                     <span className="text-base text-gray-500 text-center font-light">
-                        © {year} <NavLink to={ROUTES.HOME} onClick={handleClick}>{t("companyName")}™</NavLink>.
+                        © {year}. <NavLink to={ROUTES.HOME} onClick={handleClick}>{t("companyName")}™</NavLink>.
                         &nbsp;
                         <a href="https://contragent.by/unp/591614779"
                            target="_blank"
                            rel="noopener noreferrer"
                            className="hover:text-red-500 transition font-light"
                         >
-                            {t("UNP")}
+                            {t("UNP")}.
                         </a>
                         &nbsp;
                         {t("all_right_reserved")}
                     </span>
 
                     <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
-                        <a href="viber://chat?number=%2B375295210417"
+                        <a href="viber://chat?number=%2B375291132228"
                            target='_blank'
                            className="text-gray-400 hover:text-red-500">
                             <FaViber className="w-6 h-6"/>
@@ -116,15 +102,19 @@ const Footer = () => {
                            className="text-gray-400 hover:text-red-500">
                             <MdOutlineMailOutline className="w-6 h-6"/>
                         </a>
+                        <a href="https://wa.me/375291132228" target='_blank'
+                           className="text-gray-400 hover:text-red-500 transition">
+                            <FaWhatsapp className="w-6 h-6"/>
+                        </a>
                     </div>
                 </div>
-                <div className='text-center  mt-5 pb-5'>
-                    <p className='!text-white'>
+                <div className='px-4 py-5 pb-20 bg-gray-900 text-center'>
+                    <p className='!text-gray-400'>
                         {t("developed_by")} &nbsp;
                         <a href="https://www.linkedin.com/in/ivan-bezniak-2634a11a0/"
                            rel="noreferrer"
                            target="_blank"
-                           className='text-white hover:text-red-500 transition'
+                           className='text-gray-400 hover:text-red-500 transition'
                         >
                             {t("ivan_bezniak")}
                         </a>

@@ -7,6 +7,10 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import AboutUs from "./components/AboutUs/AboutUs.jsx";
 import PortfolioContainer from "./components/Portfolio/PortfolioContainer.jsx";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy.jsx";
+import Services from "./components/Services/Services.jsx";
+import Service from "./components/Services/Service.jsx";
+import ContactsPage from "./components/ContactsPage/ContactsPage.jsx";
+import Faq from "./components/FAQ/Faq.jsx";
 
 
 const Layout = () => {
@@ -48,6 +52,22 @@ const App = () => {
                 {
                     path: ROUTES.PRIVACY_POLICY,
                     element: <PrivacyPolicy/>
+                },
+                {
+                    path: ROUTES.SERVICES,
+                    element: <Services/>
+                },
+                {
+                    path: ROUTES.SERVICE,
+                    element: <Service/>
+                },
+                {
+                    path: ROUTES.CONTACTS,
+                    element: <ContactsPage/>
+                },
+                {
+                    path: ROUTES.FAQ,
+                    element: <Faq/>
                 },
             ]
         },
