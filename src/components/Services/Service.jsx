@@ -122,6 +122,8 @@ const Service = () => {
                 </div>
             </div>
 
+            {/*{service?.}*/}
+
             <div className='container mx-auto py-10 md:py-20 px-4'>
                 <h2 className='mb-10 text-center'>{service.additionTitle}</h2>
                 <div className='flex justify-center flex-wrap gap-10'>
