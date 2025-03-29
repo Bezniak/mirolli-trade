@@ -41,13 +41,14 @@ const Services = () => {
             </motion.div>
             <div className='overlay'></div>
 
-            <div className="flex flex-wrap justify-center gap-18 py-10">
+            <div className="flex flex-wrap justify-center gap-10 md:gap-18 py-10 p-5">
                 {store.services.map((item) => (
                     <div
                         key={item.id}
-                        className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col">
+                        className="w-full md:max-w-sm lg:max-w-md bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col">
                         <NavLink to={`/service/${item.url}`} onClick={handleClick}>
-                            <img className="rounded-t-lg" src={item.mobileImg} alt={item.name}/>
+                            <img className="rounded-t-lg h-64 w-full object-cover" src={item.mobileImg} alt={item.name}/>
+
                         </NavLink>
                         <div className="p-5 flex flex-col flex-grow">
                             <NavLink to={`/service/${item.url}`} onClick={handleClick}>
@@ -55,12 +56,12 @@ const Services = () => {
                                     {item.name}
                                 </h5>
                             </NavLink>
-                            <p className="mb-3 font-normal text-gray-700">
+                            <p className="font-normal text-gray-900 mb-10">
                                 {item.smallDesc}
                             </p>
-                            <div className="mt-auto">
+                            <div className="mt-auto flex justify-end">
                                 <NavLink to={`/service/${item.url}`} onClick={handleClick}
-                                         className="w-fit flex items-center justify-center bg-orange-500 text-white py-2 px-6 hover:bg-orange-600 transition"
+                                         className="w-fit flex items-center justify-center rounded-lg bg-red-600 text-white py-2 px-6 hover:bg-red-800 transition"
                                 >
                                     {t("servicePage.readMore")}
                                     <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"

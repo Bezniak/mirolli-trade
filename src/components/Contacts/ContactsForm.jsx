@@ -117,7 +117,7 @@ const ContactsForm = () => {
 
                 <div className="flex flex-col md:flex-row items-center gap-10 space-x-2">
                     <button type="submit"
-                            className="flex items-center justify-center bg-orange-500 text-white py-4 px-12 hover:bg-orange-600 transition"
+                            className="flex items-center justify-center bg-red-600 text-white py-4 px-12 hover:bg-red-800 transition"
                     >
                         <FaPaperPlane className="mr-2"/> {t('contactsForm.submit')}
                     </button>
@@ -127,12 +127,12 @@ const ContactsForm = () => {
                             <input
                                 type="checkbox"
                                 {...register('privacyPolicy', {required: t("contactsForm.agree")})}
-                                className="w-6 h-6 accent-orange-500"
+                                className="w-6 h-6 accent-red-600"
                             />
                             <label className="text-gray-600 text-sm">
                                 {t('contactsForm.privacyAgreement')}
                                 <NavLink to={ROUTES.PRIVACY_POLICY}
-                                         className="hover:text-orange-500 underline transition">
+                                         className="hover:text-red-600 underline transition">
                                     {t('contactsForm.pp')}
                                 </NavLink>
                             </label>

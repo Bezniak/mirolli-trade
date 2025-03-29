@@ -39,7 +39,7 @@ const Safety = () => {
                     <li>{t("safety.workingHours_2")}</li>
                 </ul>
                 <button
-                    className="flex items-center justify-center bg-orange-500 text-white py-4 px-12 hover:bg-orange-600 transition"
+                    className="flex items-center justify-center bg-red-600 text-white py-4 px-12 hover:bg-red-800 transition"
                 >
                     {t("safety.contactUs")}
                 </button>

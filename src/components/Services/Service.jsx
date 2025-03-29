@@ -6,6 +6,7 @@ import {Preloader} from "../Preloader/Preloader.jsx";
 import {motion} from 'framer-motion';
 import {TiTick} from "react-icons/ti";
 import {RiMailSendLine} from "react-icons/ri";
+import {Parallax} from 'react-scroll-parallax';
 
 
 const Service = () => {
@@ -100,7 +101,8 @@ const Service = () => {
             <div className="container mx-auto py-10 md:py-20 px-4">
                 <h2 className="text-center mb-10">{service.additionTitle}</h2>
 
-                <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
+                <div
+                    className="container mx-auto p-5 md:p-0 py-10 md:py-20 flex flex-col md:flex-row justify-between items-center gap-10">
                     {/* Список */}
                     <div className="w-full md:w-1/2">
                         {service.additionTitleList.map((item) => (
@@ -111,14 +113,21 @@ const Service = () => {
                         ))}
                     </div>
 
-                    {/* Изображение */}
-                    <div className="w-full md:w-1/2">
-                        <img
-                            src={service.additionImg}
-                            alt={service.name}
-                            className="w-full h-auto object-cover rounded-lg shadow-lg"
-                        />
+                    <div className="md:w-1/2 flex justify-center overflow-hidden relative h-fit">
+                        <Parallax translateY={[-50, 50]}>
+                            <img src={service.additionImg} alt={service.name}
+                                 className="max-w-full h-auto object-cover rounded-xl"/>
+                        </Parallax>
                     </div>
+
+                    {/* Изображение */}
+                    {/*<div className="w-full md:w-1/2">*/}
+                    {/*    <img*/}
+                    {/*        src={service.additionImg}*/}
+                    {/*        alt={service.name}*/}
+                    {/*        className="w-full h-auto object-cover rounded-lg shadow-lg"*/}
+                    {/*    />*/}
+                    {/*</div>*/}
                 </div>
             </div>
 
@@ -145,7 +154,7 @@ const Service = () => {
 
 
             <button type="submit"
-                    className="mx-auto mt-10 mb-20 flex items-center justify-center bg-orange-500 text-white py-4 px-12 hover:bg-orange-600 transition"
+                    className="mx-auto mt-10 mb-20 flex items-center justify-center bg-red-500 text-white py-4 px-12 hover:bg-red-700 transition"
             >
                 <RiMailSendLine className="size-6 mr-4"/> {t('makeRequest')}
             </button>

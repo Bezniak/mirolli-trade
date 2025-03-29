@@ -25,29 +25,29 @@ const Contacts = () => {
                     {t("contactsPage.description")}
                 </p>
                 <ul className='flex flex-col gap-6'>
-                    <li className='font-light flex items-center gap-3 cursor-pointer hover:text-orange-600 transition' onClick={handleAddressClick}>
+                    <li className='font-light flex items-center gap-3 cursor-pointer hover:text-red-600 transition' onClick={handleAddressClick}>
                         <IoLocationOutline className='size-6 text-blue-400' />
                         {t("address")}
                     </li>
-                    <li className='font-light flex items-center gap-3 cursor-pointer hover:text-orange-600 transition'>
+                    <li className='font-light flex items-center gap-3 cursor-pointer hover:text-red-600 transition'>
                         <a href={`tel:${t("phone_1")}`} className='flex items-center gap-3'>
                             <TbDeviceLandlinePhone className='size-6 text-blue-400' />
                             {t("phone_1")}
                         </a>
                     </li>
-                    <li className='font-light flex items-center gap-3 cursor-pointer hover:text-orange-600 transition'>
+                    <li className='font-light flex items-center gap-3 cursor-pointer hover:text-red-600 transition'>
                         <a href={`tel:${t("phone_2")}`} className='flex items-center gap-3'>
                             <MdPhoneAndroid className='size-6 text-blue-400' />
                             {t("phone_2")}
                         </a>
                     </li>
-                    <li className='font-light flex items-center gap-3 cursor-pointer hover:text-orange-600 transition'>
+                    <li className='font-light flex items-center gap-3 cursor-pointer hover:text-red-600 transition'>
                         <a href={`tel:${t("phone_3")}`} className='flex items-center gap-3'>
                             <MdPhoneAndroid className='size-6 text-blue-400' />
                             {t("phone_3")}
                         </a>
                     </li>
-                    <li className='font-light flex items-center gap-3 cursor-pointer hover:text-orange-600 transition'>
+                    <li className='font-light flex items-center gap-3 cursor-pointer hover:text-red-600 transition'>
                         <a href={`mailto:${t("email")}`} className='flex items-center gap-3'>
                             <MdOutlineEmail className='size-6 text-blue-400' />
                             {t("email")}
