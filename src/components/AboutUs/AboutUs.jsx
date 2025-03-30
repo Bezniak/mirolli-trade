@@ -125,8 +125,8 @@ const AboutUs = () => {
                 </div>
             </div>
             <Process/>
-            <div className='py-32 bg-[url(/aboutUsBg.jpg)] bg-no-repeat bg-cover'>
-                <div className='container mx-auto h-96 flex flex-col justify-center items-center text-center'>
+            <div className='md:py-32 bg-[url(/aboutUsBg.jpg)] bg-no-repeat bg-cover'>
+                <div className='container mx-auto p-5 flex flex-col justify-center items-center text-center'>
                     <p className='!text-white leading-10 mb-10 text-lg'>
                         {t("aboutPage.mission_1")}
                     </p>
@@ -135,6 +135,7 @@ const AboutUs = () => {
                     </p>
                 </div>
             </div>
+
             <Reviews/>
             <Contacts/>
         </div>

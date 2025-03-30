@@ -108,7 +108,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <div className='px-4 py-5 pb-20 bg-gray-900 text-center'>
+                <div className='px-4 pb-5 bg-gray-900 text-center'>
                     <p className='!text-gray-400'>
                         {t("developed_by")} &nbsp;
                         <a href="https://www.linkedin.com/in/ivan-bezniak-2634a11a0/"
