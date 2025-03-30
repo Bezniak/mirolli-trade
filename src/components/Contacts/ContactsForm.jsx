@@ -27,7 +27,7 @@ const ContactsForm = () => {
                             <input
                                 type="text"
                                 placeholder={t('contactsForm.name')}
-                                {...register('name', { required: t("contactsForm.required") })}
+                                {...register('name', {required: t("contactsForm.required")})}
                                 className={`w-full focus:outline-none border-b py-2 ${
                                     errors.name ? "border-red-500" : "border-gray-300"
                                 }`}

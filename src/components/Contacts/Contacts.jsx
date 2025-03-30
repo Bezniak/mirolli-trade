@@ -10,7 +10,7 @@ const Contacts = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="container mx-auto mb-20 flex flex-col md:flex-row w-full p-5">
+        <div className="container mx-auto my-20 flex flex-col md:flex-row w-full p-5">
             <div className='w-full md:w-1/2 flex flex-col items-start justify-between'>
                 <h4 className='text-xs font-bold tracking-widest text-gray-500 uppercase mb-4'>
                     {t("contactsPage.contactsUs")}
@@ -24,6 +24,13 @@ const Contacts = () => {
                 <p className='text-justify leading-relaxed mb-6'>
                     {t("contactsPage.description")}
                 </p>
+                <p className='leading-relaxed font-bold text-xl !text-blue-400'>
+                    {t("contactsPage.workingHours_1")}
+                </p>
+                <p className='leading-relaxed mb-6 font-bold text-xl !text-red-500'>
+                    {t("contactsPage.workingHours_2")}
+                </p>
+
                 <ul className='flex flex-col gap-6'>
                     <li className='font-light flex items-center gap-3 cursor-pointer hover:text-red-600 transition' onClick={handleAddressClick}>
                         <IoLocationOutline className='size-6 text-blue-400' />

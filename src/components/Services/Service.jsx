@@ -14,15 +14,7 @@ const Service = () => {
     const {t} = useTranslation();
     const store = createStore(t);
     const [loading, setLoading] = useState(true);
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
-    // Новая анимация для сдвига снизу вверх с увеличением прозрачности
-    const slideUpFade = {
-        hidden: {opacity: 0, y: 50},
-        visible: {opacity: 1, y: 0, transition: {duration: 0.8, ease: "easeOut"}},
-    };
-
-    // Найти нужный массаж по URL
     const service = store.services.find(m => m.url === id);
 
     useEffect(() => {
