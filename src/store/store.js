@@ -15,54 +15,31 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.adjustmentOfGasDistributionSystem.title_1"),
                     text: t("servicesPage.adjustmentOfGasDistributionSystem.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.adjustmentOfGasDistributionSystem.title_2"),
                     text: t("servicesPage.adjustmentOfGasDistributionSystem.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.adjustmentOfGasDistributionSystem.title_3"),
                     text: t("servicesPage.adjustmentOfGasDistributionSystem.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.adjustmentOfGasDistributionSystem.title_4"),
                     text: t("servicesPage.adjustmentOfGasDistributionSystem.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.adjustmentOfGasDistributionSystem.title_5"),
                     text: t("servicesPage.adjustmentOfGasDistributionSystem.addition_5"),
                 },
             ],
             additionImg: '/adjustmentOfGasDistributionSystemOne.png',
-            advantagesTitle: t("servicesPage.adjustmentOfGasDistributionSystem.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.adjustmentOfGasDistributionSystem.advantages_Title_1"),
-                    desc: t("servicesPage.adjustmentOfGasDistributionSystem.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.adjustmentOfGasDistributionSystem.advantages_Title_2"),
-                    desc: t("servicesPage.adjustmentOfGasDistributionSystem.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.adjustmentOfGasDistributionSystem.advantages_Title_3"),
-                    desc: t("servicesPage.adjustmentOfGasDistributionSystem.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.adjustmentOfGasDistributionSystem.advantages_Title_4"),
-                    desc: t("servicesPage.adjustmentOfGasDistributionSystem.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.adjustmentOfGasDistributionSystem.advantages_Title_5"),
-                    desc: t("servicesPage.adjustmentOfGasDistributionSystem.advantages_Desc_5"),
-                },
-            ]
         },
         {
             id: 2,
@@ -76,45 +53,26 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.title_1"),
                     text: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.title_2"),
                     text: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.title_3"),
                     text: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.title_4"),
                     text: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.addition_4"),
                 },
             ],
             additionImg: '/adjustmentOfEquipmentUnderExcessPressureOne.png',
-            advantagesTitle: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.advantages_Title_1"),
-                    desc: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.advantages_Title_2"),
-                    desc: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.advantages_Title_3"),
-                    desc: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.advantages_Title_4"),
-                    desc: t("servicesPage.adjustmentOfEquipmentUnderExcessPressure.advantages_Desc_4"),
-                },
-            ]
         },
         {
             id: 3,
@@ -128,41 +86,21 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.adjustmentOfTechnicalDevices.title_1"),
                     text: t("servicesPage.adjustmentOfTechnicalDevices.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.adjustmentOfTechnicalDevices.title_2"),
                     text: t("servicesPage.adjustmentOfTechnicalDevices.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.adjustmentOfTechnicalDevices.title_3"),
                     text: t("servicesPage.adjustmentOfTechnicalDevices.addition_3"),
                 },
             ],
             additionImg: '/adjustmentOfTechnicalDevicesOne.png',
-            advantagesTitle: t("servicesPage.adjustmentOfTechnicalDevices.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.adjustmentOfTechnicalDevices.advantages_Title_1"),
-                    desc: t("servicesPage.adjustmentOfTechnicalDevices.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.adjustmentOfTechnicalDevices.advantages_Title_2"),
-                    desc: t("servicesPage.adjustmentOfTechnicalDevices.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.adjustmentOfTechnicalDevices.advantages_Title_3"),
-                    desc: t("servicesPage.adjustmentOfTechnicalDevices.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.adjustmentOfTechnicalDevices.advantages_Title_4"),
-                    desc: t("servicesPage.adjustmentOfTechnicalDevices.advantages_Desc_4"),
-                },
-            ]
         },
         {
             id: 4,
@@ -176,45 +114,26 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.maintenanceOfGasDistributionSystem.title_1"),
                     text: t("servicesPage.maintenanceOfGasDistributionSystem.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.maintenanceOfGasDistributionSystem.title_2"),
                     text: t("servicesPage.maintenanceOfGasDistributionSystem.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.maintenanceOfGasDistributionSystem.title_3"),
                     text: t("servicesPage.maintenanceOfGasDistributionSystem.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.maintenanceOfGasDistributionSystem.title_4"),
                     text: t("servicesPage.maintenanceOfGasDistributionSystem.addition_4"),
                 },
             ],
             additionImg: '/maintenanceOfGasDistributionSystemOne.png',
-            advantagesTitle: t("servicesPage.maintenanceOfGasDistributionSystem.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.maintenanceOfGasDistributionSystem.advantages_Title_1"),
-                    desc: t("servicesPage.maintenanceOfGasDistributionSystem.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.maintenanceOfGasDistributionSystem.advantages_Title_2"),
-                    desc: t("servicesPage.maintenanceOfGasDistributionSystem.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.maintenanceOfGasDistributionSystem.advantages_Title_3"),
-                    desc: t("servicesPage.maintenanceOfGasDistributionSystem.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.maintenanceOfGasDistributionSystem.advantages_Title_4"),
-                    desc: t("servicesPage.maintenanceOfGasDistributionSystem.advantages_Desc_4"),
-                },
-            ]
         },
         {
             id: 5,
@@ -228,45 +147,26 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.servicingEquipmentUnderExcessPressure.title_1"),
                     text: t("servicesPage.servicingEquipmentUnderExcessPressure.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.servicingEquipmentUnderExcessPressure.title_2"),
                     text: t("servicesPage.servicingEquipmentUnderExcessPressure.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.servicingEquipmentUnderExcessPressure.title_3"),
                     text: t("servicesPage.servicingEquipmentUnderExcessPressure.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.servicingEquipmentUnderExcessPressure.title_4"),
                     text: t("servicesPage.servicingEquipmentUnderExcessPressure.addition_4"),
                 },
             ],
             additionImg: '/servicingEquipmentUnderExcessPressureOne.jpg',
-            advantagesTitle: t("servicesPage.servicingEquipmentUnderExcessPressure.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.servicingEquipmentUnderExcessPressure.advantages_Title_1"),
-                    desc: t("servicesPage.servicingEquipmentUnderExcessPressure.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.servicingEquipmentUnderExcessPressure.advantages_Title_2"),
-                    desc: t("servicesPage.servicingEquipmentUnderExcessPressure.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.servicingEquipmentUnderExcessPressure.advantages_Title_3"),
-                    desc: t("servicesPage.servicingEquipmentUnderExcessPressure.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.servicingEquipmentUnderExcessPressure.advantages_Title_4"),
-                    desc: t("servicesPage.servicingEquipmentUnderExcessPressure.advantages_Desc_4"),
-                },
-            ]
         },
         {
             id: 6,
@@ -280,41 +180,21 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.maintenanceOfTechnicalDevices.title_1"),
                     text: t("servicesPage.maintenanceOfTechnicalDevices.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.maintenanceOfTechnicalDevices.title_2"),
                     text: t("servicesPage.maintenanceOfTechnicalDevices.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.maintenanceOfTechnicalDevices.title_3"),
                     text: t("servicesPage.maintenanceOfTechnicalDevices.addition_3"),
                 },
             ],
             additionImg: '/maintenanceOfTechnicalDevicesOne.jpg',
-            advantagesTitle: t("servicesPage.maintenanceOfTechnicalDevices.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.maintenanceOfTechnicalDevices.advantages_Title_1"),
-                    desc: t("servicesPage.maintenanceOfTechnicalDevices.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.maintenanceOfTechnicalDevices.advantages_Title_2"),
-                    desc: t("servicesPage.maintenanceOfTechnicalDevices.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.maintenanceOfTechnicalDevices.advantages_Title_3"),
-                    desc: t("servicesPage.maintenanceOfTechnicalDevices.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.maintenanceOfTechnicalDevices.advantages_Title_4"),
-                    desc: t("servicesPage.maintenanceOfTechnicalDevices.advantages_Desc_4"),
-                },
-            ]
         },
         {
             id: 7,
@@ -328,45 +208,26 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.installationOfEquipmentUnderExcessPressure.title_1"),
                     text: t("servicesPage.installationOfEquipmentUnderExcessPressure.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.installationOfEquipmentUnderExcessPressure.title_2"),
                     text: t("servicesPage.installationOfEquipmentUnderExcessPressure.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.installationOfEquipmentUnderExcessPressure.title_3"),
                     text: t("servicesPage.installationOfEquipmentUnderExcessPressure.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.installationOfEquipmentUnderExcessPressure.title_4"),
                     text: t("servicesPage.installationOfEquipmentUnderExcessPressure.addition_4"),
                 },
             ],
             additionImg: '/installationOfEquipmentUnderExcessPressureOne.jpg',
-            advantagesTitle: t("servicesPage.installationOfEquipmentUnderExcessPressure.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.installationOfEquipmentUnderExcessPressure.advantages_Title_1"),
-                    desc: t("servicesPage.installationOfEquipmentUnderExcessPressure.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.installationOfEquipmentUnderExcessPressure.advantages_Title_2"),
-                    desc: t("servicesPage.installationOfEquipmentUnderExcessPressure.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.installationOfEquipmentUnderExcessPressure.advantages_Title_3"),
-                    desc: t("servicesPage.installationOfEquipmentUnderExcessPressure.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.installationOfEquipmentUnderExcessPressure.advantages_Title_4"),
-                    desc: t("servicesPage.installationOfEquipmentUnderExcessPressure.advantages_Desc_4"),
-                },
-            ]
         },
         {
             id: 8,
@@ -380,45 +241,26 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.installationOfTechnicalDevices.title_1"),
                     text: t("servicesPage.installationOfTechnicalDevices.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.installationOfTechnicalDevices.title_2"),
                     text: t("servicesPage.installationOfTechnicalDevices.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.installationOfTechnicalDevices.title_3"),
                     text: t("servicesPage.installationOfTechnicalDevices.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.installationOfTechnicalDevices.title_4"),
                     text: t("servicesPage.installationOfTechnicalDevices.addition_4"),
                 },
             ],
             additionImg: '/installationOfTechnicalDevicesOne.jpg',
-            advantagesTitle: t("servicesPage.installationOfTechnicalDevices.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.installationOfTechnicalDevices.advantages_Title_1"),
-                    desc: t("servicesPage.installationOfTechnicalDevices.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.installationOfTechnicalDevices.advantages_Title_2"),
-                    desc: t("servicesPage.installationOfTechnicalDevices.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.installationOfTechnicalDevices.advantages_Title_3"),
-                    desc: t("servicesPage.installationOfTechnicalDevices.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.installationOfTechnicalDevices.advantages_Title_4"),
-                    desc: t("servicesPage.installationOfTechnicalDevices.advantages_Desc_4"),
-                },
-            ]
         },
         {
             id: 9,
@@ -432,49 +274,31 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.installationOfGasDistributionSystemFacilities.title_1"),
                     text: t("servicesPage.installationOfGasDistributionSystemFacilities.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.installationOfGasDistributionSystemFacilities.title_2"),
                     text: t("servicesPage.installationOfGasDistributionSystemFacilities.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.installationOfGasDistributionSystemFacilities.title_3"),
                     text: t("servicesPage.installationOfGasDistributionSystemFacilities.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.installationOfGasDistributionSystemFacilities.title_4"),
                     text: t("servicesPage.installationOfGasDistributionSystemFacilities.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.installationOfGasDistributionSystemFacilities.title_5"),
                     text: t("servicesPage.installationOfGasDistributionSystemFacilities.addition_5"),
                 },
             ],
             additionImg: '/installationOfGasDistributionSystemFacilitiesOne.png',
-            advantagesTitle: t("servicesPage.installationOfGasDistributionSystemFacilities.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.installationOfGasDistributionSystemFacilities.advantages_Title_1"),
-                    desc: t("servicesPage.installationOfGasDistributionSystemFacilities.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.installationOfGasDistributionSystemFacilities.advantages_Title_2"),
-                    desc: t("servicesPage.installationOfGasDistributionSystemFacilities.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.installationOfGasDistributionSystemFacilities.advantages_Title_3"),
-                    desc: t("servicesPage.installationOfGasDistributionSystemFacilities.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.installationOfGasDistributionSystemFacilities.advantages_Title_4"),
-                    desc: t("servicesPage.installationOfGasDistributionSystemFacilities.advantages_Desc_4"),
-                },
-            ]
         },
         {
             id: 10,
@@ -488,42 +312,52 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.foundationConstruction.title_1"),
                     text: t("servicesPage.foundationConstruction.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.foundationConstruction.title_2"),
                     text: t("servicesPage.foundationConstruction.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.foundationConstruction.title_3"),
                     text: t("servicesPage.foundationConstruction.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.foundationConstruction.title_4"),
                     text: t("servicesPage.foundationConstruction.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.foundationConstruction.title_5"),
                     text: t("servicesPage.foundationConstruction.addition_5"),
                 },
                 {
                     id: 6,
+                    title: t("servicesPage.foundationConstruction.title_6"),
                     text: t("servicesPage.foundationConstruction.addition_6"),
                 },
                 {
                     id: 7,
+                    title: t("servicesPage.foundationConstruction.title_7"),
                     text: t("servicesPage.foundationConstruction.addition_7"),
                 },
                 {
                     id: 8,
+                    title: t("servicesPage.foundationConstruction.title_8"),
                     text: t("servicesPage.foundationConstruction.addition_8"),
                 },
                 {
                     id: 9,
+                    title: t("servicesPage.foundationConstruction.title_9"),
                     text: t("servicesPage.foundationConstruction.addition_9"),
                 },
                 {
                     id: 10,
+                    title: t("servicesPage.foundationConstruction.title_10"),
                     text: t("servicesPage.foundationConstruction.addition_10"),
                 },
             ],
@@ -531,34 +365,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.foundationConstruction.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.foundationConstruction.supportStructures_1"),
             supportStructures_2: t("servicesPage.foundationConstruction.supportStructures_2"),
-            advantagesTitle: t("servicesPage.foundationConstruction.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.foundationConstruction.advantages_Title_1"),
-                    desc: t("servicesPage.foundationConstruction.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.foundationConstruction.advantages_Title_2"),
-                    desc: t("servicesPage.foundationConstruction.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.foundationConstruction.advantages_Title_3"),
-                    desc: t("servicesPage.foundationConstruction.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.foundationConstruction.advantages_Title_4"),
-                    desc: t("servicesPage.foundationConstruction.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.foundationConstruction.advantages_Title_5"),
-                    desc: t("servicesPage.foundationConstruction.advantages_Desc_5"),
-                },
-            ]
         },
         {
             id: 11,
@@ -572,22 +378,27 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.monolithicConcreteStructures.title_1"),
                     text: t("servicesPage.monolithicConcreteStructures.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.monolithicConcreteStructures.title_2"),
                     text: t("servicesPage.monolithicConcreteStructures.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.monolithicConcreteStructures.title_3"),
                     text: t("servicesPage.monolithicConcreteStructures.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.monolithicConcreteStructures.title_4"),
                     text: t("servicesPage.monolithicConcreteStructures.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.monolithicConcreteStructures.title_5"),
                     text: t("servicesPage.monolithicConcreteStructures.addition_5"),
                 },
             ],
@@ -595,34 +406,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.monolithicConcreteStructures.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.monolithicConcreteStructures.supportStructures_1"),
             supportStructures_2: t("servicesPage.monolithicConcreteStructures.supportStructures_2"),
-            advantagesTitle: t("servicesPage.monolithicConcreteStructures.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.monolithicConcreteStructures.advantages_Title_1"),
-                    desc: t("servicesPage.monolithicConcreteStructures.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.monolithicConcreteStructures.advantages_Title_2"),
-                    desc: t("servicesPage.monolithicConcreteStructures.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.monolithicConcreteStructures.advantages_Title_3"),
-                    desc: t("servicesPage.monolithicConcreteStructures.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.monolithicConcreteStructures.advantages_Title_4"),
-                    desc: t("servicesPage.monolithicConcreteStructures.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.monolithicConcreteStructures.advantages_Title_5"),
-                    desc: t("servicesPage.monolithicConcreteStructures.advantages_Desc_5"),
-                },
-            ]
         },
         {
             id: 12,
@@ -636,50 +419,62 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.steelStructureInstallation.title_1"),
                     text: t("servicesPage.steelStructureInstallation.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.steelStructureInstallation.title_2"),
                     text: t("servicesPage.steelStructureInstallation.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.steelStructureInstallation.title_3"),
                     text: t("servicesPage.steelStructureInstallation.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.steelStructureInstallation.title_4"),
                     text: t("servicesPage.steelStructureInstallation.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.steelStructureInstallation.title_5"),
                     text: t("servicesPage.steelStructureInstallation.addition_5"),
                 },
                 {
                     id: 6,
+                    title: t("servicesPage.steelStructureInstallation.title_6"),
                     text: t("servicesPage.steelStructureInstallation.addition_6"),
                 },
                 {
                     id: 7,
+                    title: t("servicesPage.steelStructureInstallation.title_7"),
                     text: t("servicesPage.steelStructureInstallation.addition_7"),
                 },
                 {
                     id: 8,
+                    title: t("servicesPage.steelStructureInstallation.title_8"),
                     text: t("servicesPage.steelStructureInstallation.addition_8"),
                 },
                 {
                     id: 9,
+                    title: t("servicesPage.steelStructureInstallation.title_9"),
                     text: t("servicesPage.steelStructureInstallation.addition_9"),
                 },
                 {
                     id: 10,
+                    title: t("servicesPage.steelStructureInstallation.title_10"),
                     text: t("servicesPage.steelStructureInstallation.addition_10"),
                 },
                 {
                     id: 11,
+                    title: t("servicesPage.steelStructureInstallation.title_11"),
                     text: t("servicesPage.steelStructureInstallation.addition_11"),
                 },
                 {
                     id: 12,
+                    title: t("servicesPage.steelStructureInstallation.title_12"),
                     text: t("servicesPage.steelStructureInstallation.addition_12"),
                 },
             ],
@@ -687,34 +482,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.steelStructureInstallation.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.steelStructureInstallation.supportStructures_1"),
             supportStructures_2: t("servicesPage.steelStructureInstallation.supportStructures_2"),
-            advantagesTitle: t("servicesPage.steelStructureInstallation.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.steelStructureInstallation.advantages_Title_1"),
-                    desc: t("servicesPage.steelStructureInstallation.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.steelStructureInstallation.advantages_Title_2"),
-                    desc: t("servicesPage.steelStructureInstallation.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.steelStructureInstallation.advantages_Title_3"),
-                    desc: t("servicesPage.steelStructureInstallation.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.steelStructureInstallation.advantages_Title_4"),
-                    desc: t("servicesPage.steelStructureInstallation.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.steelStructureInstallation.advantages_Title_5"),
-                    desc: t("servicesPage.steelStructureInstallation.advantages_Desc_5"),
-                },
-            ]
         },
         {
             id: 13,
@@ -728,26 +495,32 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.lightEnclosingStructuresInstallation.title_1"),
                     text: t("servicesPage.lightEnclosingStructuresInstallation.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.lightEnclosingStructuresInstallation.title_2"),
                     text: t("servicesPage.lightEnclosingStructuresInstallation.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.lightEnclosingStructuresInstallation.title_3"),
                     text: t("servicesPage.lightEnclosingStructuresInstallation.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.lightEnclosingStructuresInstallation.title_4"),
                     text: t("servicesPage.lightEnclosingStructuresInstallation.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.lightEnclosingStructuresInstallation.title_5"),
                     text: t("servicesPage.lightEnclosingStructuresInstallation.addition_5"),
                 },
                 {
                     id: 6,
+                    title: t("servicesPage.lightEnclosingStructuresInstallation.title_6"),
                     text: t("servicesPage.lightEnclosingStructuresInstallation.addition_6"),
                 },
             ],
@@ -755,34 +528,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.lightEnclosingStructuresInstallation.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.lightEnclosingStructuresInstallation.supportStructures_1"),
             supportStructures_2: t("servicesPage.lightEnclosingStructuresInstallation.supportStructures_2"),
-            advantagesTitle: t("servicesPage.lightEnclosingStructuresInstallation.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.lightEnclosingStructuresInstallation.advantages_Title_1"),
-                    desc: t("servicesPage.lightEnclosingStructuresInstallation.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.lightEnclosingStructuresInstallation.advantages_Title_2"),
-                    desc: t("servicesPage.lightEnclosingStructuresInstallation.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.lightEnclosingStructuresInstallation.advantages_Title_3"),
-                    desc: t("servicesPage.lightEnclosingStructuresInstallation.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.lightEnclosingStructuresInstallation.advantages_Title_4"),
-                    desc: t("servicesPage.lightEnclosingStructuresInstallation.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.lightEnclosingStructuresInstallation.advantages_Title_5"),
-                    desc: t("servicesPage.lightEnclosingStructuresInstallation.advantages_Desc_5"),
-                },
-            ]
         },
         {
             id: 14,
@@ -796,26 +541,32 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.roofingInstallation.title_1"),
                     text: t("servicesPage.roofingInstallation.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.roofingInstallation.title_2"),
                     text: t("servicesPage.roofingInstallation.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.roofingInstallation.title_3"),
                     text: t("servicesPage.roofingInstallation.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.roofingInstallation.title_4"),
                     text: t("servicesPage.roofingInstallation.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.roofingInstallation.title_5"),
                     text: t("servicesPage.roofingInstallation.addition_5"),
                 },
                 {
                     id: 6,
+                    title: t("servicesPage.roofingInstallation.title_6"),
                     text: t("servicesPage.roofingInstallation.addition_6"),
                 },
             ],
@@ -823,34 +574,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.roofingInstallation.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.roofingInstallation.supportStructures_1"),
             supportStructures_2: t("servicesPage.roofingInstallation.supportStructures_2"),
-            advantagesTitle: t("servicesPage.roofingInstallation.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.roofingInstallation.advantages_Title_1"),
-                    desc: t("servicesPage.roofingInstallation.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.roofingInstallation.advantages_Title_2"),
-                    desc: t("servicesPage.roofingInstallation.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.roofingInstallation.advantages_Title_3"),
-                    desc: t("servicesPage.roofingInstallation.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.roofingInstallation.advantages_Title_4"),
-                    desc: t("servicesPage.roofingInstallation.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.roofingInstallation.advantages_Title_5"),
-                    desc: t("servicesPage.roofingInstallation.advantages_Desc_5"),
-                },
-            ]
         },
         {
             id: 15,
@@ -864,26 +587,32 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.thermalInsulation.title_1"),
                     text: t("servicesPage.thermalInsulation.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.thermalInsulation.title_2"),
                     text: t("servicesPage.thermalInsulation.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.thermalInsulation.title_3"),
                     text: t("servicesPage.thermalInsulation.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.thermalInsulation.title_4"),
                     text: t("servicesPage.thermalInsulation.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.thermalInsulation.title_5"),
                     text: t("servicesPage.thermalInsulation.addition_5"),
                 },
                 {
                     id: 6,
+                    title: t("servicesPage.thermalInsulation.title_6"),
                     text: t("servicesPage.thermalInsulation.addition_6"),
                 },
             ],
@@ -891,39 +620,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.thermalInsulation.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.thermalInsulation.supportStructures_1"),
             supportStructures_2: t("servicesPage.thermalInsulation.supportStructures_2"),
-            advantagesTitle: t("servicesPage.thermalInsulation.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.thermalInsulation.advantages_Title_1"),
-                    desc: t("servicesPage.thermalInsulation.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.thermalInsulation.advantages_Title_2"),
-                    desc: t("servicesPage.thermalInsulation.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.thermalInsulation.advantages_Title_3"),
-                    desc: t("servicesPage.thermalInsulation.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.thermalInsulation.advantages_Title_4"),
-                    desc: t("servicesPage.thermalInsulation.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.thermalInsulation.advantages_Title_5"),
-                    desc: t("servicesPage.thermalInsulation.advantages_Desc_5"),
-                },
-                {
-                    id: 6,
-                    title: t("servicesPage.thermalInsulation.advantages_Title_6"),
-                    desc: t("servicesPage.thermalInsulation.advantages_Desc_6"),
-                },
-            ]
         },
         {
             id: 16,
@@ -937,22 +633,27 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.thermalInsulationEquipment.title_1"),
                     text: t("servicesPage.thermalInsulationEquipment.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.thermalInsulationEquipment.title_2"),
                     text: t("servicesPage.thermalInsulationEquipment.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.thermalInsulationEquipment.title_3"),
                     text: t("servicesPage.thermalInsulationEquipment.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.thermalInsulationEquipment.title_4"),
                     text: t("servicesPage.thermalInsulationEquipment.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.thermalInsulationEquipment.title_5"),
                     text: t("servicesPage.thermalInsulationEquipment.addition_5"),
                 },
             ],
@@ -960,34 +661,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.thermalInsulationEquipment.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.thermalInsulationEquipment.supportStructures_1"),
             supportStructures_2: t("servicesPage.thermalInsulationEquipment.supportStructures_2"),
-            advantagesTitle: t("servicesPage.thermalInsulationEquipment.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.thermalInsulationEquipment.advantages_Title_1"),
-                    desc: t("servicesPage.thermalInsulationEquipment.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.thermalInsulationEquipment.advantages_Title_2"),
-                    desc: t("servicesPage.thermalInsulationEquipment.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.thermalInsulationEquipment.advantages_Title_3"),
-                    desc: t("servicesPage.thermalInsulationEquipment.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.thermalInsulationEquipment.advantages_Title_4"),
-                    desc: t("servicesPage.thermalInsulationEquipment.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.thermalInsulationEquipment.advantages_Title_5"),
-                    desc: t("servicesPage.thermalInsulationEquipment.advantages_Desc_5"),
-                },
-            ]
         },
         {
             id: 17,
@@ -1001,22 +674,27 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.finishingWorks.title_1"),
                     text: t("servicesPage.finishingWorks.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.finishingWorks.title_2"),
                     text: t("servicesPage.finishingWorks.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.finishingWorks.title_3"),
                     text: t("servicesPage.finishingWorks.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.finishingWorks.title_4"),
                     text: t("servicesPage.finishingWorks.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.finishingWorks.title_5"),
                     text: t("servicesPage.finishingWorks.addition_5"),
                 },
             ],
@@ -1024,34 +702,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.finishingWorks.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.finishingWorks.supportStructures_1"),
             supportStructures_2: t("servicesPage.finishingWorks.supportStructures_2"),
-            advantagesTitle: t("servicesPage.finishingWorks.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.finishingWorks.advantages_Title_1"),
-                    desc: t("servicesPage.finishingWorks.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.finishingWorks.advantages_Title_2"),
-                    desc: t("servicesPage.finishingWorks.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.finishingWorks.advantages_Title_3"),
-                    desc: t("servicesPage.finishingWorks.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.finishingWorks.advantages_Title_4"),
-                    desc: t("servicesPage.finishingWorks.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.finishingWorks.advantages_Title_5"),
-                    desc: t("servicesPage.finishingWorks.advantages_Desc_5"),
-                },
-            ]
         },
         {
             id: 18,
@@ -1065,14 +715,17 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.windowAndDoorFramesFilling.title_1"),
                     text: t("servicesPage.windowAndDoorFramesFilling.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.windowAndDoorFramesFilling.title_2"),
                     text: t("servicesPage.windowAndDoorFramesFilling.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.windowAndDoorFramesFilling.title_3"),
                     text: t("servicesPage.windowAndDoorFramesFilling.addition_3"),
                 },
             ],
@@ -1080,24 +733,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.windowAndDoorFramesFilling.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.windowAndDoorFramesFilling.supportStructures_1"),
             supportStructures_2: t("servicesPage.windowAndDoorFramesFilling.supportStructures_2"),
-            advantagesTitle: t("servicesPage.windowAndDoorFramesFilling.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.windowAndDoorFramesFilling.advantages_Title_1"),
-                    desc: t("servicesPage.windowAndDoorFramesFilling.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.windowAndDoorFramesFilling.advantages_Title_2"),
-                    desc: t("servicesPage.finishingWorks.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.windowAndDoorFramesFilling.advantages_Title_3"),
-                    desc: t("servicesPage.windowAndDoorFramesFilling.advantages_Desc_3"),
-                },
-            ]
         },
         {
             id: 19,
@@ -1111,50 +746,62 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.floorInstallation.title_1"),
                     text: t("servicesPage.floorInstallation.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.floorInstallation.title_2"),
                     text: t("servicesPage.floorInstallation.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.floorInstallation.title_3"),
                     text: t("servicesPage.floorInstallation.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.floorInstallation.title_4"),
                     text: t("servicesPage.floorInstallation.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.floorInstallation.title_5"),
                     text: t("servicesPage.floorInstallation.addition_5"),
                 },
                 {
                     id: 6,
+                    title: t("servicesPage.floorInstallation.title_6"),
                     text: t("servicesPage.floorInstallation.addition_6"),
                 },
                 {
                     id: 7,
+                    title: t("servicesPage.floorInstallation.title_7"),
                     text: t("servicesPage.floorInstallation.addition_7"),
                 },
                 {
                     id: 8,
+                    title: t("servicesPage.floorInstallation.title_8"),
                     text: t("servicesPage.floorInstallation.addition_8"),
                 },
                 {
                     id: 9,
+                    title: t("servicesPage.floorInstallation.title_9"),
                     text: t("servicesPage.floorInstallation.addition_9"),
                 },
                 {
                     id: 10,
+                    title: t("servicesPage.floorInstallation.title_10"),
                     text: t("servicesPage.floorInstallation.addition_10"),
                 },
                 {
                     id: 11,
+                    title: t("servicesPage.floorInstallation.title_11"),
                     text: t("servicesPage.floorInstallation.addition_11"),
                 },
                 {
                     id: 12,
+                    title: t("servicesPage.floorInstallation.title_12"),
                     text: t("servicesPage.floorInstallation.addition_12"),
                 },
             ],
@@ -1162,69 +809,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.floorInstallation.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.floorInstallation.supportStructures_1"),
             supportStructures_2: t("servicesPage.floorInstallation.supportStructures_2"),
-            advantagesTitle: t("servicesPage.floorInstallation.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.floorInstallation.advantages_Title_1"),
-                    desc: t("servicesPage.floorInstallation.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.floorInstallation.advantages_Title_2"),
-                    desc: t("servicesPage.floorInstallation.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.floorInstallation.advantages_Title_3"),
-                    desc: t("servicesPage.floorInstallation.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.floorInstallation.advantages_Title_4"),
-                    desc: t("servicesPage.floorInstallation.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.floorInstallation.advantages_Title_5"),
-                    desc: t("servicesPage.floorInstallation.advantages_Desc_5"),
-                },
-                {
-                    id: 6,
-                    title: t("servicesPage.floorInstallation.advantages_Title_6"),
-                    desc: t("servicesPage.floorInstallation.advantages_Desc_6"),
-                },
-                {
-                    id: 7,
-                    title: t("servicesPage.floorInstallation.advantages_Title_7"),
-                    desc: t("servicesPage.floorInstallation.advantages_Desc_7"),
-                },
-                {
-                    id: 8,
-                    title: t("servicesPage.floorInstallation.advantages_Title_8"),
-                    desc: t("servicesPage.floorInstallation.advantages_Desc_8"),
-                },
-                {
-                    id: 9,
-                    title: t("servicesPage.floorInstallation.advantages_Title_9"),
-                    desc: t("servicesPage.floorInstallation.advantages_Desc_9"),
-                },
-                {
-                    id: 10,
-                    title: t("servicesPage.floorInstallation.advantages_Title_10"),
-                    desc: t("servicesPage.floorInstallation.advantages_Desc_10"),
-                },
-                {
-                    id: 11,
-                    title: t("servicesPage.floorInstallation.advantages_Title_11"),
-                    desc: t("servicesPage.floorInstallation.advantages_Desc_11")
-                },
-                {
-                    id: 12,
-                    title: t("servicesPage.floorInstallation.advantages_Title_12"),
-                    desc: t("servicesPage.floorInstallation.advantages_Desc_12"),
-                },
-            ]
         },
         {
             id: 20,
@@ -1238,42 +822,52 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.equipmentInstallation.title_1"),
                     text: t("servicesPage.equipmentInstallation.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.equipmentInstallation.title_2"),
                     text: t("servicesPage.equipmentInstallation.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.equipmentInstallation.title_3"),
                     text: t("servicesPage.equipmentInstallation.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.equipmentInstallation.title_4"),
                     text: t("servicesPage.equipmentInstallation.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.equipmentInstallation.title_5"),
                     text: t("servicesPage.equipmentInstallation.addition_5"),
                 },
                 {
                     id: 6,
+                    title: t("servicesPage.equipmentInstallation.title_6"),
                     text: t("servicesPage.equipmentInstallation.addition_6"),
                 },
                 {
                     id: 7,
+                    title: t("servicesPage.equipmentInstallation.title_7"),
                     text: t("servicesPage.equipmentInstallation.addition_7"),
                 },
                 {
                     id: 8,
+                    title: t("servicesPage.equipmentInstallation.title_8"),
                     text: t("servicesPage.equipmentInstallation.addition_8"),
                 },
                 {
                     id: 9,
+                    title: t("servicesPage.equipmentInstallation.title_9"),
                     text: t("servicesPage.equipmentInstallation.addition_9"),
                 },
                 {
                     id: 10,
+                    title: t("servicesPage.equipmentInstallation.title_10"),
                     text: t("servicesPage.equipmentInstallation.addition_10"),
                 },
             ],
@@ -1281,59 +875,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.equipmentInstallation.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.equipmentInstallation.supportStructures_1"),
             supportStructures_2: t("servicesPage.equipmentInstallation.supportStructures_2"),
-            advantagesTitle: t("servicesPage.equipmentInstallation.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.equipmentInstallation.advantages_Title_1"),
-                    desc: t("servicesPage.equipmentInstallation.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.equipmentInstallation.advantages_Title_2"),
-                    desc: t("servicesPage.equipmentInstallation.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.equipmentInstallation.advantages_Title_3"),
-                    desc: t("servicesPage.equipmentInstallation.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.equipmentInstallation.advantages_Title_4"),
-                    desc: t("servicesPage.equipmentInstallation.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.equipmentInstallation.advantages_Title_5"),
-                    desc: t("servicesPage.equipmentInstallation.advantages_Desc_5"),
-                },
-                {
-                    id: 6,
-                    title: t("servicesPage.equipmentInstallation.advantages_Title_6"),
-                    desc: t("servicesPage.equipmentInstallation.advantages_Desc_6"),
-                },
-                {
-                    id: 7,
-                    title: t("servicesPage.equipmentInstallation.advantages_Title_7"),
-                    desc: t("servicesPage.equipmentInstallation.advantages_Desc_7"),
-                },
-                {
-                    id: 8,
-                    title: t("servicesPage.equipmentInstallation.advantages_Title_8"),
-                    desc: t("servicesPage.equipmentInstallation.advantages_Desc_8"),
-                },
-                {
-                    id: 9,
-                    title: t("servicesPage.equipmentInstallation.advantages_Title_9"),
-                    desc: t("servicesPage.equipmentInstallation.advantages_Desc_9"),
-                },
-                {
-                    id: 10,
-                    title: t("servicesPage.equipmentInstallation.advantages_Title_10"),
-                    desc: t("servicesPage.equipmentInstallation.advantages_Desc_10"),
-                },
-            ]
         },
         {
             id: 21,
@@ -1347,14 +888,17 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.pipelineInstallation.title_1"),
                     text: t("servicesPage.pipelineInstallation.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.pipelineInstallation.title_2"),
                     text: t("servicesPage.pipelineInstallation.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.pipelineInstallation.title_3"),
                     text: t("servicesPage.pipelineInstallation.addition_3"),
                 },
             ],
@@ -1362,24 +906,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.pipelineInstallation.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.pipelineInstallation.supportStructures_1"),
             supportStructures_2: t("servicesPage.pipelineInstallation.supportStructures_2"),
-            advantagesTitle: t("servicesPage.pipelineInstallation.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.pipelineInstallation.advantages_Title_1"),
-                    desc: t("servicesPage.pipelineInstallation.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.pipelineInstallation.advantages_Title_2"),
-                    desc: t("servicesPage.pipelineInstallation.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.pipelineInstallation.advantages_Title_3"),
-                    desc: t("servicesPage.pipelineInstallation.advantages_Desc_3"),
-                },
-            ]
         },
         {
             id: 22,
@@ -1424,44 +950,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.internalSystemsInstallation.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.internalSystemsInstallation.supportStructures_1"),
             supportStructures_2: t("servicesPage.internalSystemsInstallation.supportStructures_2"),
-            advantagesTitle: t("servicesPage.internalSystemsInstallation.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.internalSystemsInstallation.advantages_Title_1"),
-                    desc: t("servicesPage.internalSystemsInstallation.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.internalSystemsInstallation.advantages_Title_2"),
-                    desc: t("servicesPage.internalSystemsInstallation.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.internalSystemsInstallation.advantages_Title_3"),
-                    desc: t("servicesPage.internalSystemsInstallation.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.internalSystemsInstallation.advantages_Title_4"),
-                    desc: t("servicesPage.internalSystemsInstallation.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.internalSystemsInstallation.advantages_Title_5"),
-                    desc: t("servicesPage.internalSystemsInstallation.advantages_Desc_5"),
-                },
-                {
-                    id: 6,
-                    title: t("servicesPage.internalSystemsInstallation.advantages_Title_6"),
-                    desc: t("servicesPage.internalSystemsInstallation.advantages_Desc_6"),
-                },
-                {
-                    id: 7,
-                    title: t("servicesPage.internalSystemsInstallation.advantages_Title_7"),
-                    desc: t("servicesPage.internalSystemsInstallation.advantages_Desc_7"),
-                },
-            ]
         },
         {
             id: 23,
@@ -1475,22 +963,27 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.externalNetworksInstallation.title_1"),
                     text: t("servicesPage.externalNetworksInstallation.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.externalNetworksInstallation.title_2"),
                     text: t("servicesPage.externalNetworksInstallation.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.externalNetworksInstallation.title_3"),
                     text: t("servicesPage.externalNetworksInstallation.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.externalNetworksInstallation.title_4"),
                     text: t("servicesPage.externalNetworksInstallation.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.externalNetworksInstallation.title_5"),
                     text: t("servicesPage.externalNetworksInstallation.addition_5"),
                 },
             ],
@@ -1498,34 +991,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.externalNetworksInstallation.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.externalNetworksInstallation.supportStructures_1"),
             supportStructures_2: t("servicesPage.externalNetworksInstallation.supportStructures_2"),
-            advantagesTitle: t("servicesPage.externalNetworksInstallation.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.externalNetworksInstallation.advantages_Title_1"),
-                    desc: t("servicesPage.externalNetworksInstallation.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.externalNetworksInstallation.advantages_Title_2"),
-                    desc: t("servicesPage.externalNetworksInstallation.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.externalNetworksInstallation.advantages_Title_3"),
-                    desc: t("servicesPage.externalNetworksInstallation.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.externalNetworksInstallation.advantages_Title_4"),
-                    desc: t("servicesPage.externalNetworksInstallation.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.externalNetworksInstallation.advantages_Title_5"),
-                    desc: t("servicesPage.externalNetworksInstallation.advantages_Desc_5"),
-                },
-            ]
         },
         {
             id: 24,
@@ -1539,18 +1004,22 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.heatMeterInstallation.title_1"),
                     text: t("servicesPage.heatMeterInstallation.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.heatMeterInstallation.title_2"),
                     text: t("servicesPage.heatMeterInstallation.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.heatMeterInstallation.title_3"),
                     text: t("servicesPage.heatMeterInstallation.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.heatMeterInstallation.title_4"),
                     text: t("servicesPage.heatMeterInstallation.addition_4"),
                 },
             ],
@@ -1558,29 +1027,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.heatMeterInstallation.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.heatMeterInstallation.supportStructures_1"),
             supportStructures_2: t("servicesPage.heatMeterInstallation.supportStructures_2"),
-            advantagesTitle: t("servicesPage.heatMeterInstallation.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.heatMeterInstallation.advantages_Title_1"),
-                    desc: t("servicesPage.heatMeterInstallation.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.heatMeterInstallation.advantages_Title_2"),
-                    desc: t("servicesPage.heatMeterInstallation.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.heatMeterInstallation.advantages_Title_3"),
-                    desc: t("servicesPage.heatMeterInstallation.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.heatMeterInstallation.advantages_Title_4"),
-                    desc: t("servicesPage.heatMeterInstallation.advantages_Desc_4"),
-                },
-            ]
         },
         {
             id: 25,
@@ -1594,22 +1040,27 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.electricalInstallation.title_1"),
                     text: t("servicesPage.electricalInstallation.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.electricalInstallation.title_2"),
                     text: t("servicesPage.electricalInstallation.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.electricalInstallation.title_3"),
                     text: t("servicesPage.electricalInstallation.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.electricalInstallation.title_4"),
                     text: t("servicesPage.electricalInstallation.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.electricalInstallation.title_5"),
                     text: t("servicesPage.electricalInstallation.addition_5"),
                 },
             ],
@@ -1617,34 +1068,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.electricalInstallation.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.electricalInstallation.supportStructures_1"),
             supportStructures_2: t("servicesPage.electricalInstallation.supportStructures_2"),
-            advantagesTitle: t("servicesPage.electricalInstallation.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.electricalInstallation.advantages_Title_1"),
-                    desc: t("servicesPage.electricalInstallation.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.electricalInstallation.advantages_Title_2"),
-                    desc: t("servicesPage.electricalInstallation.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.electricalInstallation.advantages_Title_3"),
-                    desc: t("servicesPage.electricalInstallation.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.electricalInstallation.advantages_Title_4"),
-                    desc: t("servicesPage.electricalInstallation.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.electricalInstallation.advantages_Title_5"),
-                    desc: t("servicesPage.electricalInstallation.advantages_Desc_5"),
-                },
-            ]
         },
         {
             id: 26,
@@ -1658,26 +1081,32 @@ export const createStore = (t) => ({
             additionTitleList: [
                 {
                     id: 1,
+                    title: t("servicesPage.automationSystemsInstallation.title_1"),
                     text: t("servicesPage.automationSystemsInstallation.addition_1"),
                 },
                 {
                     id: 2,
+                    title: t("servicesPage.automationSystemsInstallation.title_2"),
                     text: t("servicesPage.automationSystemsInstallation.addition_2"),
                 },
                 {
                     id: 3,
+                    title: t("servicesPage.automationSystemsInstallation.title_3"),
                     text: t("servicesPage.automationSystemsInstallation.addition_3"),
                 },
                 {
                     id: 4,
+                    title: t("servicesPage.automationSystemsInstallation.title_4"),
                     text: t("servicesPage.automationSystemsInstallation.addition_4"),
                 },
                 {
                     id: 5,
+                    title: t("servicesPage.automationSystemsInstallation.title_5"),
                     text: t("servicesPage.automationSystemsInstallation.addition_5"),
                 },
                 {
                     id: 6,
+                    title: t("servicesPage.automationSystemsInstallation.title_6"),
                     text: t("servicesPage.automationSystemsInstallation.addition_6"),
                 },
             ],
@@ -1685,39 +1114,6 @@ export const createStore = (t) => ({
             supportStructuresTitle: t("servicesPage.automationSystemsInstallation.supportStructuresTitle"),
             supportStructures_1: t("servicesPage.automationSystemsInstallation.supportStructures_1"),
             supportStructures_2: t("servicesPage.automationSystemsInstallation.supportStructures_2"),
-            advantagesTitle: t("servicesPage.automationSystemsInstallation.advantagesTitle"),
-            advantagesTitleList: [
-                {
-                    id: 1,
-                    title: t("servicesPage.automationSystemsInstallation.advantages_Title_1"),
-                    desc: t("servicesPage.automationSystemsInstallation.advantages_Desc_1"),
-                },
-                {
-                    id: 2,
-                    title: t("servicesPage.automationSystemsInstallation.advantages_Title_2"),
-                    desc: t("servicesPage.automationSystemsInstallation.advantages_Desc_2"),
-                },
-                {
-                    id: 3,
-                    title: t("servicesPage.automationSystemsInstallation.advantages_Title_3"),
-                    desc: t("servicesPage.automationSystemsInstallation.advantages_Desc_3"),
-                },
-                {
-                    id: 4,
-                    title: t("servicesPage.automationSystemsInstallation.advantages_Title_4"),
-                    desc: t("servicesPage.automationSystemsInstallation.advantages_Desc_4"),
-                },
-                {
-                    id: 5,
-                    title: t("servicesPage.automationSystemsInstallation.advantages_Title_5"),
-                    desc: t("servicesPage.automationSystemsInstallation.advantages_Desc_5"),
-                },
-                {
-                    id: 6,
-                    title: t("servicesPage.automationSystemsInstallation.advantages_Title_6"),
-                    desc: t("servicesPage.automationSystemsInstallation.advantages_Desc_6"),
-                },
-            ]
         },
     ]
 })
