@@ -20,6 +20,10 @@ const Faq = () => {
         {question: t("question_4"), answer: t("answer_4")},
         {question: t("question_5"), answer: t("answer_5")},
         {question: t("question_6"), answer: t("answer_6")},
+        {question: t("question_7"), answer: t("answer_7")},
+        {question: t("question_8"), answer: t("answer_8")},
+        {question: t("question_9"), answer: t("answer_9")},
+        {question: t("question_10"), answer: t("answer_10")},
     ];
 
     return (

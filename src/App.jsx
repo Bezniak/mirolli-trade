@@ -11,6 +11,7 @@ import Services from "./components/Services/Services.jsx";
 import Service from "./components/Services/Service.jsx";
 import ContactsPage from "./components/ContactsPage/ContactsPage.jsx";
 import Faq from "./components/FAQ/Faq.jsx";
+import Book from "./components/Book/Book.jsx";
 
 
 const Layout = () => {
@@ -68,6 +69,10 @@ const App = () => {
                 {
                     path: ROUTES.FAQ,
                     element: <Faq/>
+                },
+                {
+                    path: ROUTES.BOOK,
+                    element: <Book/>
                 },
             ]
         },

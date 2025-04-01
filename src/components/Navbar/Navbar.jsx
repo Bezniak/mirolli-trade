@@ -4,6 +4,7 @@ import {ROUTES} from "../../config/routes.js";
 import {useTranslation} from "react-i18next";
 import useLanguage from "../../hooks/useLanguage.js";
 import LanguageSelector from "./LanguageSelector.jsx";
+import {RiMailSendLine} from "react-icons/ri";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -77,9 +78,9 @@ const Navbar = () => {
                         <li>
                             <NavLink to={ROUTES.SERVICES} className="hover:text-gray-300">{t("services")}</NavLink>
                         </li>
-                        <li>
-                            <NavLink to={ROUTES.PORTFOLIO} className="hover:text-gray-300">{t("portfolio")}</NavLink>
-                        </li>
+                        {/*<li>*/}
+                        {/*    <NavLink to={ROUTES.PORTFOLIO} className="hover:text-gray-300">{t("portfolio")}</NavLink>*/}
+                        {/*</li>*/}
                         <li>
                             <NavLink to={ROUTES.FAQ} className="hover:text-gray-300">{t("Faq")}</NavLink>
                         </li>
@@ -90,7 +91,13 @@ const Navbar = () => {
                 </div>
 
                 {/* Переключатель языка */}
-                <div className="relative">
+                <div className="relative flex items-center justify-evenly gap-10">
+                    <NavLink to={ROUTES.BOOK}
+                             className="flex items-center justify-center bg-white text-red-500 font-bold py-2 px-5  hover:bg-red-600 hover:text-white transition"
+                    >
+                        <RiMailSendLine className="size-6 mr-4 hidden md:block"/> {t('makeRequest')}
+                    </NavLink>
+
                     <LanguageSelector
                         currentLanguage={currentLanguage}
                         changeLanguage={changeLanguage}
@@ -128,14 +135,14 @@ const Navbar = () => {
                             {t("services")}
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink to={ROUTES.PORTFOLIO}
-                                 onClick={() => setIsMobileMenuOpen(false)}
-                                 className="py-2"
-                        >
-                            {t("portfolio")}
-                        </NavLink>
-                    </li>
+                    {/*<li>*/}
+                    {/*    <NavLink to={ROUTES.PORTFOLIO}*/}
+                    {/*             onClick={() => setIsMobileMenuOpen(false)}*/}
+                    {/*             className="py-2"*/}
+                    {/*    >*/}
+                    {/*        {t("portfolio")}*/}
+                    {/*    </NavLink>*/}
+                    {/*</li>*/}
                     <li>
                         <NavLink to={ROUTES.FAQ}
                                  onClick={() => setIsMobileMenuOpen(false)}

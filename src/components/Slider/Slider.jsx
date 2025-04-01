@@ -7,6 +7,9 @@ import 'swiper/css/pagination';
 import {Autoplay, EffectFade, Pagination} from 'swiper/modules';
 import {useTranslation} from "react-i18next";
 import './style.css';
+import {NavLink} from "react-router-dom";
+import {ROUTES} from "../../config/routes.js";
+import {handleClick} from "../../common/helpers.js";
 
 const Slider = () => {
     const {t} = useTranslation();
@@ -47,14 +50,16 @@ const Slider = () => {
                     {slides[activeIndex].title}
                 </h1>
                 <div className="mt-10 md:mt-20 flex justify-center md:justify-start flex-wrap gap-4 w-full">
-                    <button
-                        className="px-6 py-3 min-w-64 bg-white text-black font-medium hover:bg-gray-300 transition">
+                    <NavLink to={ROUTES.SERVICES}
+                             onClick={handleClick}
+                             className="block text-center px-6 py-3 min-w-64 bg-white text-black font-medium hover:bg-gray-300 transition">
                         {t('slider.more')}
-                    </button>
-                    <button
-                        className="px-6 py-3 min-w-64 bg-white text-black font-medium hover:bg-gray-300 transition">
+                    </NavLink>
+                    <NavLink to={ROUTES.ABOUT_US}
+                             onClick={handleClick}
+                             className="block text-center px-6 py-3 min-w-64 bg-white text-black font-medium hover:bg-gray-300 transition">
                         {t('slider.aboutUs')}
-                    </button>
+                    </NavLink>
                 </div>
             </div>
         </div>

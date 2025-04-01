@@ -141,7 +141,6 @@ const ContactsForm = () => {
                             <p className="!text-red-500 text-sm">{errors.privacyPolicy.message}</p>}
                     </div>
                 </div>
-
             </form>
         </div>
     );

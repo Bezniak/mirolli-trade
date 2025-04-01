@@ -1,5 +1,7 @@
 import React from 'react';
 import {useTranslation} from "react-i18next";
+import {NavLink} from "react-router-dom";
+import {ROUTES} from "../../config/routes.js";
 
 const Safety = () => {
     const {t} = useTranslation();
@@ -35,14 +37,15 @@ const Safety = () => {
                     {t("safety.description")}
                 </p>
                 <ul className='text-gray-700 font-medium mb-12'>
-                    <li className='mb-2'>{t("safety.workingHours_1")}</li>
-                    <li>{t("safety.workingHours_2")}</li>
+                    <li className='mb-2 font-semibold text-lg'>{t("contactsPage.workingHours")}</li>
+                    <li className='mb-2 text-blue-500 font-semibold'>{t("contactsPage.workingHours_1")}</li>
+                    <li className='text-red-500 font-semibold'>{t("contactsPage.workingHours_2")}</li>
                 </ul>
-                <button
-                    className="flex items-center justify-center bg-red-600 text-white py-4 px-12 hover:bg-red-800 transition"
+                <NavLink to={ROUTES.BOOK}
+                    className="w-fit flex items-center justify-center bg-red-600 text-white py-4 px-12 hover:bg-red-800 transition"
                 >
-                    {t("safety.contactUs")}
-                </button>
+                    {t("leaveMessage")}
+                </NavLink>
             </div>
         </div>
     );

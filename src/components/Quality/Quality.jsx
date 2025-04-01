@@ -7,10 +7,12 @@ const Quality = () => {
 
     const services = [
         "service_1",
-        "service_2",
         "service_3",
-        "service_4",
-        "service_5"
+        "service_7",
+        "service_8",
+        "service_9",
+        "service_10",
+        "service_11",
     ];
 
     const imgBlock = [
