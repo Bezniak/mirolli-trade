@@ -140,8 +140,8 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <div className='px-4 pb-5 bg-gray-900 text-center'>
-                    <p className='!text-white'>
+                <div className='px-4 pb-5 bg-gray-900 text-center flex flex-col justify-center items-center'>
+                    <p className='!text-white flex'>
                         {t("developed_by")} &nbsp;
                         <a href="https://www.linkedin.com/in/ivan-bezniak-2634a11a0/"
                            rel="noreferrer"
@@ -151,6 +151,10 @@ const Footer = () => {
                             {t("ivan_bezniak")}
                         </a>
                     </p>
+                    <a href={`tel:${t("phone_4")}`}
+                       className='flex items-center gap-3 my-1 text-white font-normal hover:text-red-500 transition'>
+                        {t("phone_4")}
+                    </a>
                 </div>
 
             </div>
