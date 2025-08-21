@@ -126,10 +126,10 @@ const Footer = () => {
                            className="text-white hover:text-red-500">
                             <FaViber className="w-6 h-6"/>
                         </a>
-                        <a href="https://t.me/ivan_bezniak" target='_blank'
-                           className="text-white hover:text-red-500">
-                            <FaTelegram className="w-6 h-6"/>
-                        </a>
+                        {/*<a href="https://t.me/ivan_bezniak" target='_blank'*/}
+                        {/*   className="text-white hover:text-red-500">*/}
+                        {/*    <FaTelegram className="w-6 h-6"/>*/}
+                        {/*</a>*/}
                         <a href="mailto:tvbr@tut.by" target='_blank'
                            className="text-white hover:text-red-500">
                             <MdOutlineMailOutline className="w-6 h-6"/>
@@ -143,10 +143,11 @@ const Footer = () => {
                 <div className='px-4 pb-5 bg-gray-900 text-center flex flex-col justify-center items-center'>
                     <p className='!text-white flex'>
                         {t("developed_by")} &nbsp;
-                        <a href="https://www.linkedin.com/in/ivan-bezniak-2634a11a0/"
-                           rel="noreferrer"
-                           target="_blank"
-                           className='text-white hover:text-red-500 transition'
+                        <a
+                            href="https://t.me/ivan_bezniak"
+                            rel="noreferrer"
+                            target="_blank"
+                            className='text-white hover:text-red-500 transition'
                         >
                             {t("ivan_bezniak")}
                         </a>

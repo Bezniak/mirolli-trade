@@ -1,12 +1,41 @@
-# React + Vite
+🌿 https://mirollitrade.by/ — Website for Gas Equipment Installation and Maintenance  
+Mirolli-Trade is a professional website developed for a company that specializes in installation, commissioning, maintenance, and automation of gas equipment and boiler systems in Belarus.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔍 Project Goal  
+To create an intuitive, responsive, and informative platform that helps individuals and organizations:
 
-Currently, two official plugins are available:
+- Learn about professional gas equipment installation and maintenance services
+- Get in touch with the company for commissioning or servicing
+- Understand the rules for safe operation of gas systems
+- Quickly find answers to frequently asked questions about equipment and services
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚙️ Technologies Used
 
-## Expanding the ESLint configuration
+- React — for building a responsive user interface
+- Tailwind CSS — for fast and adaptive design
+- Vite — for rapid development and bundling
+- i18next — for multilingual support
+- Framer Motion and Swiper — for animations and sliders
+- React Hook Form — for form validation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+💼 Features Implemented
+
+- Home page with key company information
+- “About Us,” “Services,” and “Contacts” pages
+- Interactive service request form
+- Frequently Asked Questions (FAQ) section
+- Fully optimized mobile version
+
+🖥 This project aims to showcase professional gas equipment services, provide reliable information, and facilitate communication between the company and clients.
+
+SEO & Accessibility:
+
+- Semantic HTML markup
+- Open Graph and meta tags
+- Favicon and manifest.json
+- Adaptive design for all devices
+- Fast page load with Vite and resource optimization
+
+Developer: Ivan Bezniak  
+Telegram: @ivan_bezniak  
+Email: ivan.bezniak@gmail.com

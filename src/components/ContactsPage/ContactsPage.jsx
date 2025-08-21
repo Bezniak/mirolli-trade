@@ -3,13 +3,15 @@ import {motion} from "framer-motion";
 import {useTranslation} from "react-i18next";
 import Contacts from "../Contacts/Contacts.jsx";
 import Map from "./Map/Map.jsx";
+import MetaTags from "../../common/MetaTags.jsx";
 
 const ContactsPage = () => {
     const {t} = useTranslation();
 
 
     return (
-        <div>
+        <>
+            <MetaTags page="seo.contacts" />
             <motion.div
                 className='md:bg-[url(/contacts.jpg)] h-screen bg-center bg-no-repeat bg-cover bg-[url(/contactsMobile.jpg)] flex items-center justify-center'
                 initial={{opacity: 0}}
@@ -23,7 +25,7 @@ const ContactsPage = () => {
             <div className='overlay'></div>
             <Contacts/>
             <Map/>
-        </div>
+        </>
     );
 };
 

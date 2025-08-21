@@ -1,0 +1,19 @@
+# Отключаем MultiViews, чтобы избежать конфликтов с путями
+Options -MultiViews
+
+# Включаем механизм переписывания URL
+RewriteEngine On
+
+# Перенаправление всех HTTP-запросов на HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Настраиваем кастомную страницу ошибки 404
+ErrorDocument 404 /404.html
+
+# Если запрашиваемый файл или папка существуют — отдаём их напрямую
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Иначе — отдаем index.html, чтобы React SPA обрабатывал роутинг
+RewriteRule ^ /index.html [L]

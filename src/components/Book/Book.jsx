@@ -7,6 +7,7 @@ import serviceOptions from "../../store/services.js";
 import {NavLink} from "react-router-dom";
 import {ROUTES} from "../../config/routes.js";
 import {handleClick} from "../../common/helpers.js";
+import MetaTags from "../../common/MetaTags.jsx";
 
 const ServiceRequestForm = () => {
     const {t} = useTranslation();
@@ -40,11 +41,93 @@ const ServiceRequestForm = () => {
         return data.secure_url;
     };
 
+//     const onSubmit = async (data) => {
+//         setIsSubmitting(true);
+//         setSubmissionResult(null);
+//         let fileUrls = [];
+//
+//         if (files?.length > 0) {
+//             for (let file of files) {
+//                 const fileUrl = await uploadFile(file);
+//                 fileUrls.push(fileUrl);
+//             }
+//         }
+//
+//         const formatDate = (dateString) => {
+//             if (!dateString) return "Не указана";
+//             const [year, month, day] = dateString.split("-");
+//             return `${day}.${month}.${year}`;
+//         };
+//
+//         // Проверка на пустые значения в выпадающих списках
+//         const selectedServices = data.serviceType && data.serviceType.length > 0
+//             ? data.serviceType
+//                 .map((service, index) => `
+//                 ${index + 1}) ${serviceOptions.find(option => option.value === service)?.label || service}`)
+//                 .join("\n")
+//             : "Не выбрано";
+//
+//
+//         const selectedObjectTypes = data.objectType && data.objectType.length > 0
+//             ? data.objectType
+//                 .map(type => objectTypeOptions.find(option => option.value === type)?.label || type)
+//                 .join(", ")
+//             : "Не выбрано";
+//
+//         const telegramMessage = `
+// Новая заявка с формы:
+// ---------------------------------
+// 👤 <b>Имя:</b> ${data.fullName}
+// 📧 <b>Email:</b> ${data.email}
+// 📞 <b>Телефон:</b> ${data.phone}
+// 🏢 <b>Тип объекта:</b> ${selectedObjectTypes}
+// 🛠 <b>Вид услуги:</b> ${selectedServices}
+// 📆 <b>Дата начала:</b> ${formatDate(data.startDate)}
+// 📏 <b>Размер объекта:</b> ${data.objectSize || "Не указан"}
+// 🚪 <b>Расположение объекта (адрес):</b> ${data.accessibility || "Не указан"}
+// 🏗 <b>Сложность:</b> ${data.complexity || "Не указана"}
+// 📝 <b>Комментарий:</b> ${data.comment || "Не указан"}
+//
+// 📎 <b>Файлы:</b>
+// ${fileUrls.length > 0
+//             ? fileUrls.map((url, index) => `${index + 1}. <a href="${url}">Файл ${index + 1}</a>`).join("\n")
+//             : "Не прикреплены"}
+// ---------------------------------`;
+//
+//         const telegramApiUrl = `https://api.telegram.org/bot${import.meta.env.VITE_TELEGRAM_BOT_TOKEN}/sendMessage`;
+//
+//         try {
+//             const response = await fetch(telegramApiUrl, {
+//                 method: "POST",
+//                 headers: {"Content-Type": "application/json"},
+//                 body: JSON.stringify({
+//                     chat_id: import.meta.env.VITE_TELEGRAM_CHAT_ID,
+//                     text: telegramMessage,
+//                     parse_mode: "HTML"
+//                 })
+//             });
+//
+//             const result = await response.json();
+//             if (result.ok) {
+//                 setSubmissionResult("success");
+//                 reset();
+//             } else {
+//                 setSubmissionResult("error");
+//             }
+//         } catch (error) {
+//             setSubmissionResult("error");
+//         } finally {
+//             setIsSubmitting(false);
+//         }
+//     };
+
+
     const onSubmit = async (data) => {
         setIsSubmitting(true);
         setSubmissionResult(null);
         let fileUrls = [];
 
+        // Загружаем файлы на Cloudinary, если есть
         if (files?.length > 0) {
             for (let file of files) {
                 const fileUrl = await uploadFile(file);
@@ -58,14 +141,12 @@ const ServiceRequestForm = () => {
             return `${day}.${month}.${year}`;
         };
 
-        // Проверка на пустые значения в выпадающих списках
         const selectedServices = data.serviceType && data.serviceType.length > 0
             ? data.serviceType
                 .map((service, index) => `             
-                ${index + 1}) ${serviceOptions.find(option => option.value === service)?.label || service}`)
+            ${index + 1}) ${serviceOptions.find(option => option.value === service)?.label || service}`)
                 .join("\n")
             : "Не выбрано";
-
 
         const selectedObjectTypes = data.objectType && data.objectType.length > 0
             ? data.objectType
@@ -73,47 +154,32 @@ const ServiceRequestForm = () => {
                 .join(", ")
             : "Не выбрано";
 
-        const telegramMessage = `
-Новая заявка с формы:
----------------------------------
-👤 <b>Имя:</b> ${data.fullName}
-📧 <b>Email:</b> ${data.email}
-📞 <b>Телефон:</b> ${data.phone}
-🏢 <b>Тип объекта:</b> ${selectedObjectTypes}
-🛠 <b>Вид услуги:</b> ${selectedServices}
-📆 <b>Дата начала:</b> ${formatDate(data.startDate)}
-📏 <b>Размер объекта:</b> ${data.objectSize || "Не указан"}
-🚪 <b>Расположение объекта (адрес):</b> ${data.accessibility || "Не указан"}
-🏗 <b>Сложность:</b> ${data.complexity || "Не указана"}
-📝 <b>Комментарий:</b> ${data.comment || "Не указан"}
-
-📎 <b>Файлы:</b>
-${fileUrls.length > 0
-            ? fileUrls.map((url, index) => `${index + 1}. <a href="${url}">Файл ${index + 1}</a>`).join("\n")
-            : "Не прикреплены"}
----------------------------------`;
-
-        const telegramApiUrl = `https://api.telegram.org/bot${import.meta.env.VITE_TELEGRAM_BOT_TOKEN}/sendMessage`;
-
         try {
-            const response = await fetch(telegramApiUrl, {
-                method: "POST",
-                headers: {"Content-Type": "application/json"},
-                body: JSON.stringify({
-                    chat_id: import.meta.env.VITE_TELEGRAM_CHAT_ID,
-                    text: telegramMessage,
-                    parse_mode: "HTML"
+            const phpResponse = await fetch('/send-booking-form.php', {
+                method: 'POST',
+                body: new URLSearchParams({
+                    fullName: data.fullName,
+                    phone: data.phone,
+                    email: data.email || "",
+                    objectType: selectedObjectTypes,
+                    serviceType: selectedServices,
+                    startDate: formatDate(data.startDate),
+                    objectSize: data.objectSize || "",
+                    accessibility: data.accessibility || "",
+                    complexity: data.complexity || "",
+                    comment: data.comment || "",
+                    files: fileUrls.join(", ")
                 })
             });
 
-            const result = await response.json();
-            if (result.ok) {
-                setSubmissionResult("success");
-                reset();
-            } else {
-                setSubmissionResult("error");
+            if (!phpResponse.ok) {
+                throw new Error('Ошибка при отправке на сервер');
             }
+
+            setSubmissionResult("success");
+            reset();
         } catch (error) {
+            console.error("Ошибка отправки:", error);
             setSubmissionResult("error");
         } finally {
             setIsSubmitting(false);
@@ -121,9 +187,9 @@ ${fileUrls.length > 0
     };
 
 
-
     return (
-        <div>
+        <>
+            <MetaTags page="seo.booking"/>
             <motion.div
                 className='md:bg-[url(/book.jpg)] h-screen bg-center bg-no-repeat bg-cover bg-[url(/bookMobile.png)] flex items-center justify-center'
                 initial={{opacity: 0}}
@@ -150,20 +216,22 @@ ${fileUrls.length > 0
                             <label className="block text-gray-700">{t("serviceRequest.fullName")}*</label>
                             <input
                                 type="text"
-                                {...register('fullName', { required: true })}
+                                {...register('fullName', {required: true})}
                                 className="w-full p-3 border border-gray-300 rounded-lg outline-none focus:outline-none"
                             />
-                            {errors.fullName && <p className="!text-red-600 text-sm">{t("serviceRequest.requiredField")}</p>}
+                            {errors.fullName &&
+                                <p className="!text-red-600 text-sm">{t("serviceRequest.requiredField")}</p>}
                         </div>
 
                         <div>
                             <label className="block text-gray-700">{t("serviceRequest.phone")}*</label>
                             <input
                                 type="tel"
-                                {...register('phone', { required: true })}
+                                {...register('phone', {required: true})}
                                 className="w-full p-3 border border-gray-300 rounded-lg outline-none focus:outline-none"
                             />
-                            {errors.phone && <p className="!text-red-600 text-sm">{t("serviceRequest.requiredField")}</p>}
+                            {errors.phone &&
+                                <p className="!text-red-600 text-sm">{t("serviceRequest.requiredField")}</p>}
                         </div>
 
                         <div>
@@ -173,7 +241,8 @@ ${fileUrls.length > 0
                                 {...register('email')}
                                 className="w-full p-3 border border-gray-300 rounded-lg outline-none focus:outline-none"
                             />
-                            {errors.email && <p className="!text-red-600 text-sm">{t("serviceRequest.requiredField")}</p>}
+                            {errors.email &&
+                                <p className="!text-red-600 text-sm">{t("serviceRequest.requiredField")}</p>}
                         </div>
 
                         <div>
@@ -234,8 +303,13 @@ ${fileUrls.length > 0
                                    className="w-full p-3 border border-gray-300 rounded-lg outline-none focus:outline-none"/>
                         </div>
                         <div className='flex items-center font-normal !text-black'>
-                            <p className='!text-black'>{t("serviceRequest.accept")}</p> &nbsp;
-                            <NavLink to={ROUTES.PRIVACY_POLICY} onClick={handleClick} className='underline hover:text-red-600 transition'>{t("serviceRequest.pp")}</NavLink>
+                            <p className='!text-black'>
+                                {t("serviceRequest.accept")}
+                                <NavLink to={ROUTES.PRIVACY_POLICY} onClick={handleClick}
+                                         className='underline hover:text-red-600 transition'>{t("serviceRequest.pp")}
+                                </NavLink>
+                            </p>
+
                         </div>
                         <button
                             type="submit"
@@ -251,7 +325,7 @@ ${fileUrls.length > 0
 
                 )}
             </div>
-        </div>
+        </>
     );
 };
 

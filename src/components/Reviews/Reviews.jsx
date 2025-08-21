@@ -1,17 +1,19 @@
-import React, {useEffect, useRef, useState} from "react";
-import {FaUserCircle} from "react-icons/fa";
-import {ChevronLeft, ChevronRight, Star} from "lucide-react";
-import {useTranslation} from "react-i18next";
-import {motion} from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
+import { FaUserCircle } from "react-icons/fa";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
-const Card = ({children}) => (
-    <div className="p-6 shadow-lg rounded-xl h-full flex flex-col bg-gray-900">
-        {children}
-    </div>
-);
+const Card = ({ children }) => {
+    return (
+        <article className="p-6 shadow-lg rounded-xl h-full flex flex-col bg-gray-900">
+            {children}
+        </article>
+    );
+};
 
 const Reviews = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const [currentIndex, setCurrentIndex] = useState(0);
     const sliderRef = useRef(null);
 
@@ -22,7 +24,7 @@ const Reviews = () => {
             author: t("reviewsPage.clientName_1"),
             role: t("reviewsPage.role_1"),
             avatar: "https://randomuser.me/api/portraits/men/1.jpg",
-            rating: 5
+            rating: 5,
         },
         {
             id: 2,
@@ -30,7 +32,7 @@ const Reviews = () => {
             author: t("reviewsPage.clientName_2"),
             role: t("reviewsPage.role_1"),
             avatar: "",
-            rating: 4
+            rating: 4,
         },
         {
             id: 3,
@@ -38,7 +40,7 @@ const Reviews = () => {
             author: t("reviewsPage.clientName_3"),
             role: t("reviewsPage.role_2"),
             avatar: "https://randomuser.me/api/portraits/men/3.jpg",
-            rating: 5
+            rating: 5,
         },
         {
             id: 4,
@@ -46,7 +48,7 @@ const Reviews = () => {
             author: t("reviewsPage.clientName_4"),
             role: t("reviewsPage.role_1"),
             avatar: "https://randomuser.me/api/portraits/women/4.jpg",
-            rating: 4
+            rating: 4,
         },
         {
             id: 5,
@@ -54,7 +56,7 @@ const Reviews = () => {
             author: t("reviewsPage.clientName_5"),
             role: t("reviewsPage.role_1"),
             avatar: "",
-            rating: 5
+            rating: 5,
         },
         {
             id: 6,
@@ -62,7 +64,7 @@ const Reviews = () => {
             author: t("reviewsPage.clientName_6"),
             role: t("reviewsPage.role_1"),
             avatar: "https://randomuser.me/api/portraits/women/6.jpg",
-            rating: 5
+            rating: 5,
         },
         {
             id: 7,
@@ -70,7 +72,7 @@ const Reviews = () => {
             author: t("reviewsPage.clientName_7"),
             role: t("reviewsPage.role_1"),
             avatar: "",
-            rating: 4
+            rating: 4,
         },
         {
             id: 8,
@@ -78,7 +80,7 @@ const Reviews = () => {
             author: t("reviewsPage.clientName_8"),
             role: t("reviewsPage.role_1"),
             avatar: "",
-            rating: 5
+            rating: 5,
         },
         {
             id: 9,
@@ -86,7 +88,7 @@ const Reviews = () => {
             author: t("reviewsPage.clientName_9"),
             role: t("reviewsPage.role_1"),
             avatar: "https://randomuser.me/api/portraits/men/9.jpg",
-            rating: 5
+            rating: 5,
         },
         {
             id: 10,
@@ -94,7 +96,7 @@ const Reviews = () => {
             author: t("reviewsPage.clientName_10"),
             role: t("reviewsPage.role_1"),
             avatar: "https://randomuser.me/api/portraits/women/10.jpg",
-            rating: 5
+            rating: 5,
         },
     ];
 
@@ -114,28 +116,70 @@ const Reviews = () => {
         }
     }, [currentIndex]);
 
-    const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % reviews.length);
-    const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + reviews.length) % reviews.length);
+    };
+
+    const handleKeyDown = (event) => {
+        if (event.key === "ArrowLeft") {
+            prevSlide();
+        }
+        if (event.key === "ArrowRight") {
+            nextSlide();
+        }
+    };
 
     return (
-        <div className="w-full mx-auto py-20 text-center relative overflow-hidden">
-            <h2 className="w-full p-5 mx-auto text-3xl font-bold mb-6 flex justify-center gap-12 items-center">
-                <button onClick={prevSlide} className="p-3 bg-blue-600 rounded-full hover:bg-blue-800 transition">
-                    <ChevronLeft className="w-6 h-6 text-white"/>
+        <section
+            className="container mx-auto py-20 text-center relative overflow-hidden p-5"
+            aria-label={t("reviewsPage.title")}
+            tabIndex={0}
+            onKeyDown={handleKeyDown}
+        >
+            <h2 className="w-full mx-auto text-3xl font-bold mb-6 flex justify-center gap-12 items-center">
+                <button
+                    onClick={prevSlide}
+                    aria-label="Previous review"
+                    className="p-3 bg-blue-600 rounded-full hover:bg-blue-800 transition focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                    <ChevronLeft className="w-6 h-6 text-white" />
                 </button>
                 <span>{t("reviewsPage.title")}</span>
-                <button onClick={nextSlide} className="p-3 bg-blue-600 rounded-full hover:bg-blue-800 transition">
-                    <ChevronRight className="w-6 h-6 text-white"/>
+                <button
+                    onClick={nextSlide}
+                    aria-label="Next review"
+                    className="p-3 bg-blue-600 rounded-full hover:bg-blue-800 transition focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                    <ChevronRight className="w-6 h-6 text-white" />
                 </button>
             </h2>
-            <div ref={sliderRef} className="flex gap-6 overflow-hidden scroll-smooth no-scrollbar">
+
+            <div
+                ref={sliderRef}
+                className="flex gap-6 overflow-x-hidden scroll-smooth"
+                style={{
+                    scrollbarWidth: "none", // Firefox
+                    msOverflowStyle: "none" // IE 10+
+                }}
+                role="list"
+                aria-label="Client reviews"
+            >
                 {reviews.map((review, index) => (
                     <motion.div
                         key={review.id}
-                        initial={{opacity: 0, scale: 0.8, y: 50}}
-                        animate={index === currentIndex ? {opacity: 1, scale: 1, y: 0} : {opacity: 0.5, scale: 0.9}}
-                        transition={{type: "spring", stiffness: 100, damping: 10}}
-                        className="flex-shrink-0 w-80 py-10"
+                        role="listitem"
+                        initial={{ opacity: 0, scale: 0.8, y: 50 }}
+                        animate={
+                            index === currentIndex
+                                ? { opacity: 1, scale: 1, y: 0 }
+                                : { opacity: 0.5, scale: 0.9 }
+                        }
+                        transition={{ type: "spring", stiffness: 100, damping: 10 }}
+                        className="flex-shrink-0 w-64 md:w-80 py-10"
                     >
                         <Card>
                             <div className="grid grid-rows-[auto_auto_1fr_auto] gap-3">
@@ -143,23 +187,34 @@ const Reviews = () => {
                                     {review.avatar ? (
                                         <img
                                             src={review.avatar}
-                                            alt={review.author}
+                                            alt={`${review.author} avatar`}
                                             className="w-14 h-14 rounded-full"
                                             onError={(e) => (e.target.style.display = "none")}
                                         />
                                     ) : (
-                                        <FaUserCircle className="w-14 h-14 text-gray-400"/>
+                                        <FaUserCircle className="w-14 h-14 text-gray-400" />
                                     )}
                                     <div>
-                                        <h3 className="text-lg text-white text-left font-semibold">{review.author}</h3>
-                                        <p className="text-gray-500 text-left text-sm">{review.role}</p>
+                                        <h3 className="text-lg !text-white text-left font-semibold">
+                                            {review.author}
+                                        </h3>
+                                        <p className="!text-white text-left text-sm">{review.role}</p>
                                     </div>
                                 </div>
-                                <p className="text-white overflow-hidden text-ellipsis flex-grow text-justify">{review.text}</p>
-                                <div className="flex justify-start mt-4">
+                                <p className="!text-white overflow-hidden text-ellipsis flex-grow text-justify">
+                                    {review.text}
+                                </p>
+                                <div
+                                    className="flex justify-start mt-4"
+                                    aria-label={`Rating: ${review.rating} out of 5`}
+                                >
                                     {[...Array(5)].map((_, i) => (
-                                        <Star key={i}
-                                              className={`w-5 h-5 ${i < review.rating ? "text-yellow-400" : "text-gray-300"}`}/>
+                                        <Star
+                                            key={i}
+                                            className={`w-5 h-5 ${
+                                                i < review.rating ? "text-yellow-400" : "text-gray-300"
+                                            }`}
+                                        />
                                     ))}
                                 </div>
                             </div>
@@ -167,7 +222,7 @@ const Reviews = () => {
                     </motion.div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

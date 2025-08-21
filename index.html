@@ -1,13 +1,193 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo_3.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Миролли-Трейд</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/> <!-- ✅ Кодировка документа -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <!-- ✅ Режим совместимости для IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- ✅ Адаптивность для мобильных -->
+    <meta name="theme-color" content="#ffffff"/> <!-- ✅ Цвет темы браузера/статус-бара на мобильных -->
+    <meta name="robots" content="index, follow"/> <!-- ✅ Разрешаем индексирование страниц поисковыми системами -->
+    <meta name="author" content="Миролли-Трейд"/> <!-- ✅ Автор сайта -->
+
+    <!-- SEO -->
+    <meta name="description"
+          content="Миролли-Трейд — монтаж, пуско-наладка, обслуживание и автоматизация газового оборудования и котельных установок."/>
+    <!-- ✅ Краткое описание сайта для поисковых систем -->
+
+    <meta name="keywords"
+          content="монтаж газового оборудования, обслуживание котельных, автоматизация систем, пуско-наладка газового оборудования, газовые сети, котельные установки, установка газового оборудования, ремонт газовых систем, регулировка газовых приборов, сервис газового оборудования, техническое обслуживание котельных, проектирование газовых систем, Миролли-Трейд, наладка оборудования под избыточное давление, монтаж технических устройств, установка оборудования, теплоэнергетика, инженерные системы, трубопроводные системы, внутренние сети, внешние сети, установка тепловых счетчиков, электрические системы, автоматизация систем"/>
+    <!-- ✅ Ключевые слова для SEO -->
+
+    <link rel="canonical" href="https://mirollitrade.by/"/> <!-- ✅ Канонический URL страницы -->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WGSVDGWT');
+    </script>
+    <!-- ✅ Подключение Google Tag Manager -->
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="v_PE-ziKP6_e-4Et1so4a3hoVjlq1PWZlb1UiQvXpHo"/>
+    <!-- ✅ Подтверждение сайта в Google Search Console -->
+
+    <!-- Open Graph (для соцсетей) -->
+    <meta property="og:type" content="website"/> <!-- ✅ Тип контента -->
+    <meta property="og:title" content="Миролли-Трейд — монтаж и обслуживание газового оборудования"/>
+    <!-- ✅ Заголовок для соцсетей -->
+    <meta property="og:description"
+          content="Монтаж, пуско-наладка и обслуживание газового оборудования и котельных установок в Беларуси."/>
+    <!-- ✅ Описание для соцсетей -->
+    <meta property="og:image" content="https://mirollitrade.by/logo.svg"/> <!-- ✅ Картинка для предпросмотра -->
+    <meta property="og:url" content="https://mirollitrade.by/"/> <!-- ✅ URL страницы -->
+    <meta property="og:site_name" content="Миролли-Трейд"/> <!-- ✅ Название сайта -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/> <!-- ✅ Тип карточки Twitter -->
+    <meta name="twitter:title" content="Миролли-Трейд — монтаж и обслуживание газового оборудования"/>
+    <!-- ✅ Заголовок для Twitter -->
+    <meta name="twitter:description"
+          content="Монтаж, пуско-наладка и обслуживание газового оборудования и котельных установок."/>
+    <!-- ✅ Описание для Twitter -->
+    <meta name="twitter:image" content="https://mirollitrade.by/logo.svg"/> <!-- ✅ Картинка для Twitter -->
+    <meta name="twitter:site" content="@mirollitrade"/> <!-- ✅ Ник Twitter -->
+
+    <!-- Favicon и PWA -->
+    <link rel="icon" type="image/svg+xml" href="/logo_3.svg"/> <!-- ✅ Иконка сайта -->
+    <link rel="apple-touch-icon" href="/logo_3.svg"/> <!-- ✅ Иконка для iOS -->
+    <link rel="manifest" href="/manifest.json"/> <!-- ✅ Манифест PWA -->
+
+    <!-- Preconnect для ускорения загрузки -->
+    <link rel="preconnect" href="https://www.googletagmanager.com"/>
+    <link rel="preconnect" href="https://mc.yandex.ru"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <!-- ✅ Предварительное соединение с внешними ресурсами -->
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://mc.yandex.ru https://mc.yandex.com;
+  connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://mc.yandex.ru https://mc.yandex.com https://stats.g.doubleclick.net;
+  img-src 'self' data: blob:
+    https://mirollitrade.by
+    https://mc.yandex.ru
+    https://mc.yandex.com
+    https://www.google-analytics.com
+    https://www.googletagmanager.com
+    https://www.google.com
+    https://fonts.gstatic.com
+    https://cdn.jsdelivr.net
+    https://images.unsplash.com
+    https://avatars.mds.yandex.net
+    https://pbs.twimg.com
+    https://platform-lookaside.fbsbx.com
+    https://scontent.xx.fbcdn.net
+    https://media.licdn.com
+    https://static.xx.fbcdn.net;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net;
+  font-src 'self' https://fonts.gstatic.com data:;
+  object-src 'none';
+  frame-src https://mc.yandex.ru https://mc.yandex.com https://www.googletagmanager.com;
+  base-uri 'self';
+">
+    <!-- ✅ Политика безопасности содержимого (CSP) -->
+
+    <!-- JSON-LD (структурированные данные для SEO) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Миролли-Трейд",
+            "url": "https://mirollitrade.by",
+            "logo": "https://mirollitrade.by/logo_3.svg",
+            "sameAs": [
+                "https://www.facebook.com/mirollitrade",
+                "https://www.instagram.com/mirollitrade",
+                "https://t.me/NV_massage_baranovichi"
+            ],
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "telephone": "+375291234567",
+                    "contactType": "customer service",
+                    "areaServed": "BY",
+                    "availableLanguage": [
+                        "Russian",
+                        "English"
+                    ]
+                }
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ул. Гродненская, 82С",
+                "addressLocality": "Новогрудок",
+                "postalCode": "231400",
+                "addressCountry": "BY"
+            },
+            "foundingDate": "2016",
+            "founders": [
+                {
+                    "@type": "Person",
+                    "name": "Булько Эммануил"
+                }
+            ],
+            "description": "Монтаж, пуско-наладка и обслуживание газового оборудования и котельных установок в Беларуси."
+        }
+    </script>
+    <!-- ✅ Структурированные данные для поисковых систем -->
+
+    <title>Миролли-Трейд — монтаж и обслуживание газового оборудования</title> <!-- ✅ Заголовок страницы -->
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGSVDGWT"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- ✅ Google Tag Manager для пользователей с отключенным JS -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+            if (document.scripts[j].src === r) {
+                return;
+            }
+        }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0];
+        k.async = 1;
+        k.src = r;
+        a.parentNode.insertBefore(k, a)
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=103838365', 'ym');
+
+    ym(103838365, 'init', {ssr: true, clickmap: true, accurateTrackBounce: true, trackLinks: true});
+</script>
+<noscript>
+    <div>
+        <img src="https://mc.yandex.ru/watch/103838365" style="position:absolute; left:-9999px;" alt=""/>
+    </div>
+</noscript>
+<!-- ✅ Счетчик Яндекс.Метрики -->
+
+<!-- Основной контейнер React -->
+<div id="root"></div> <!-- ✅ React рендерит всё приложение сюда -->
+<script type="module" src="/src/main.jsx"></script> <!-- ✅ Главный файл React приложения -->
+
+</body>
 </html>

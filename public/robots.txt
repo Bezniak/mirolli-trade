@@ -1,0 +1,10 @@
+User-agent: *
+
+# Запрещаем мусорные параметры
+Disallow: /*?yclid=
+
+# Разрешено всё остальное
+Allow: /
+
+# Карта сайта
+Sitemap: https://mirollitrade.by/sitemap.xml
